@@ -4,11 +4,11 @@ const browsersync = require("browser-sync").create();
 const rename = require("gulp-rename");
 const uglify = require("gulp-uglify");
 
-const isChanged = require("gulp-changed");
-const minifyImg = require("gulp-imagemin");
-const minifyImg_JPG = require("imagemin-jpeg-recompress");
-const minifyImg_PNG = require("imagemin-pngquant");
-const minifyImg_GIF = require("imagemin-gifsicle");
+// const isChanged = require("gulp-changed");
+// const minifyImg = require("gulp-imagemin");
+// const minifyImg_JPG = require("imagemin-jpeg-recompress");
+// const minifyImg_PNG = require("imagemin-pngquant");
+// const minifyImg_GIF = require("imagemin-gifsicle");
 
 // サーバーを立ち上げる
 gulp.task("build-server", function(done) {
@@ -29,7 +29,6 @@ gulp.task("watch-files", function(done) {
   gulp.watch("../*/*.js", gulp.task("browser-reload"));
   gulp.watch("../*/*.scss", gulp.series("sass-compile"));
   gulp.watch("../_js/*.js", gulp.series("js-compile"));
-  gulp.watch("../_img/*", gulp.series("minify-img"));
 
   done();
   console.log("gulp watch started");
@@ -44,15 +43,8 @@ gulp.task("sass-compile", function(done) {
   done();
 });
 
-// ブラウザのリロード
-gulp.task("browser-reload", function(done) {
-  browsersync.reload();
-  done();
-  console.log("Browser reload completed");
-});
-
 // jsコンパイル圧縮
-gulp.task("js-compile", function() {
+gulp.task("js-compile", function(done) {
   gulp
     .src("../_js/*.js")
     .pipe(uglify())
@@ -62,16 +54,14 @@ gulp.task("js-compile", function() {
       })
     )
     .pipe(gulp.dest("../js/"));
+  done();
 });
 
-// 画像軽量化
-gulp.task("minify-img", function(done) {
-  gulp
-    .src("../img/*/*.+(jpg|jpeg|png|gif)") //src部分は適宜環境に合わせて修正
-    .pipe(isChanged("../img"))
-    .pipe(minifyImg([minifyImg_JPG(), minifyImg_PNG(), minifyImg_GIF()]))
-    .pipe(gulp.dest("../img/"));
+// ブラウザのリロード
+gulp.task("browser-reload", function(done) {
+  browsersync.reload();
   done();
+  console.log("Browser reload completed");
 });
 
 // タスクの実行
