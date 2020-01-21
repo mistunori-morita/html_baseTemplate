@@ -1,0 +1,31 @@
+// responsive mixin
+
+@mixin pcWide{
+  @media (max-width: #{$pc-wide}) {
+    @content;
+  }
+}
+
+@mixin ipad {
+  @media (max-width: #{$ipad-width}) {
+    @content;
+  }
+}
+
+@mixin iphoneLarge {
+  @media (max-width: #{$iphone-plus}) {
+    @content;
+  }
+}
+
+@mixin iphoneMiddle {
+  @media (max-width: #{$iphone6}) {
+    @content;
+  }
+}
+
+@mixin iphone {
+  @media (max-width: #{$iphone5-width}) {
+    @content;
+  }
+}

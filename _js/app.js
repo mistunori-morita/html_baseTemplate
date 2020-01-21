@@ -13,6 +13,32 @@ $(function() {
 
   setTimeout(fadeItem1, 2000);
   setTimeout(fadeItem2, 3000);
+});
 
-  //
+$(function() {
+  var $pageTop = $(".footer__back");
+  if (!$pageTop.length) return false;
+
+  $pageTop.hide();
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 1500) {
+      $pageTop.fadeIn();
+    } else {
+      $pageTop.fadeOut();
+    }
+  });
+
+  $('a[href^="#"]').click(function() {
+    var href = $(this).attr("href");
+    var target = $(href == "#" || href == "" ? "html" : href);
+    var position = target.offset().top;
+    $("html, body").animate(
+      {
+        scrollTop: position
+      },
+      500,
+      "swing"
+    );
+    return false;
+  });
 });
