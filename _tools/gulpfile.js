@@ -3,7 +3,7 @@ const sass = require("gulp-sass");
 const browsersync = require("browser-sync").create();
 const rename = require("gulp-rename");
 const uglify = require("gulp-uglify");
-
+const plumber = require("gulp-plumber");
 // const isChanged = require("gulp-changed");
 // const minifyImg = require("gulp-imagemin");
 // const minifyImg_JPG = require("imagemin-jpeg-recompress");
@@ -47,6 +47,7 @@ gulp.task("sass-compile", function(done) {
 gulp.task("js-compile", function(done) {
   gulp
     .src("../_js/*.js")
+    .pipe(plumber())
     .pipe(uglify())
     .pipe(
       rename({

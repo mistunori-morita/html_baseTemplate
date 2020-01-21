@@ -25,6 +25,8 @@
     "imagemin-pngquant": "^8.0.0",
     "postcss-cssnext": "^3.1.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "gulp-plumber": "^1.2.1"
+  },
   "description": ""
 }
