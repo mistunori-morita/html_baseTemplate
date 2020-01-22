@@ -9,13 +9,14 @@ img {
 body {
   font-family: "Lato", sans-serif; }
 
-@media (max-width: 1519px) {
+@media screen and (max-width: 1519px) {
   #wrap {
-    width: 1550px;
-    margin: 0 auto; } }
+    width: 100%; } }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   #wrap {
+    width: 1500px;
+    margin: 0 auto;
     overflow: hidden; } }
 
 .header {
@@ -119,15 +120,18 @@ body {
       width: 50%; }
       .service__contents .service__itemsList-item:nth-child(1) {
         padding: 100px 110px 0; }
-        @media (max-width: 1519px) {
+        @media screen and (max-width: 1519px) {
           .service__contents .service__itemsList-item:nth-child(1) {
-            padding-top: 70px; } }
+            padding: 50px 3% 0; } }
       .service__contents .service__itemsList-item-title {
         font-size: 30px;
         font-weight: bold;
         color: #000;
         margin-bottom: 54px;
         text-align: center; }
+        @media screen and (max-width: 1519px) {
+          .service__contents .service__itemsList-item-title {
+            margin-bottom: 40px; } }
       .service__contents .service__itemsList-item-text {
         font-size: 20px;
         color: #000;
@@ -164,7 +168,13 @@ body {
         font-size: 14px;
         color: #fff; }
       .service__contents .service__itemsList-item-img img {
-        width: 100vw; }
+        width: 100%; }
+        @media screen and (max-width: 1519px) {
+          .service__contents .service__itemsList-item-img img {
+            object-fit: cover;
+            height: 410px;
+            overflow: hidden;
+            object-position: -20px 10px; } }
 
 .service__Link-Button {
   width: 660px;
@@ -227,19 +237,19 @@ body {
           background: #5576ff;
           z-index: 2; }
         .news__contents .news__List-item-thumbnail {
-          min-height: 450px;
+          max-height: 450px;
           margin-bottom: 25px;
           position: relative;
           text-align: center; }
-          .news__contents .news__List-item-thumbnail img {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            margin: auto; }
+          @media screen and (max-width: 1519px) {
+            .news__contents .news__List-item-thumbnail {
+              height: 340px;
+              overflow: hidden; } }
+          @media screen and (max-width: 1519px) {
+            .news__contents .news__List-item-thumbnail img {
+              height: 340px;
+              object-fit: contain;
+              object-position: center; } }
         .news__contents .news__List-item-date {
           padding: 0 30px;
           font-size: 15px;
@@ -290,15 +300,18 @@ body {
     margin: 0 auto;
     width: 90%;
     height: 250px; }
+    @media screen and (max-width: 1519px) {
+      .contact .inner {
+        width: 95%; } }
   .contact .contents__title {
     font-size: 50px;
     font-weight: bold;
     color: #fff; }
   .contact__info {
     margin-left: 290px; }
-    @media (max-width: 1519px) {
+    @media screen and (max-width: 1519px) {
       .contact__info {
-        margin-left: 170px; } }
+        margin-left: 0; } }
     .contact__info-text {
       font-size: 20px;
       color: #fff;
@@ -346,6 +359,9 @@ body {
     background: #fff;
     right: -100px;
     bottom: 30px; }
+    @media screen and (max-width: 1519px) {
+      .footer__back {
+        right: -20px; } }
     .footer__back a {
       display: block;
       width: 100%;
@@ -376,6 +392,12 @@ body {
     align-items: flex-start;
     justify-content: space-between;
     position: relative; }
+    @media screen and (max-width: 1519px) {
+      .footer .inner {
+        width: 95%; } }
+  @media screen and (max-width: 1519px) {
+    .footer .footer__info {
+      width: 30%; } }
   .footer .footer__info-logo {
     margin-bottom: 55px; }
   .footer .footer__info-name {
@@ -423,10 +445,17 @@ body {
     width: 850px;
     display: flex;
     flex-wrap: wrap; }
+    @media screen and (max-width: 1519px) {
+      .footer .footer__menu {
+        width: 65%; } }
     .footer .footer__menuBox {
       width: 250px;
       margin-left: 50px;
       margin-bottom: 41px; }
+      @media screen and (max-width: 1519px) {
+        .footer .footer__menuBox {
+          width: 28%;
+          margin-left: 5%; } }
       .footer .footer__menuBox:nth-child(1) {
         margin-left: 0; }
       .footer .footer__menuBox:nth-child(4) {

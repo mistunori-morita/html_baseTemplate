@@ -11,9 +11,13 @@ $(function() {
     fadeAdd(".mainVisual__Lead-sub", "in-visible");
   };
 
-  setTimeout(fadeItem1, 2000);
-  setTimeout(fadeItem2, 3000);
+
+  window.onload = function() {
+    setTimeout(fadeItem1, 2000);
+    setTimeout(fadeItem2, 3000);
+  }
 });
+
 
 $(function() {
   var $pageTop = $(".footer__back");
