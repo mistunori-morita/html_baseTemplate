@@ -28,6 +28,10 @@ body {
     margin: 0 auto;
     overflow: hidden;
   }
+
+  @include iphoneLarge {
+    width: 100%;
+  }
 }
 
 // header
@@ -42,6 +46,10 @@ body {
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
   z-index: 5;
 
+  @include iphoneLarge {
+    height: 60px;
+  }
+
   .inner {
     padding-top: 30px;
     display: flex;
@@ -50,9 +58,19 @@ body {
     max-width: 1520px;
     margin: 0 auto;
     width: 90%;
+    @include iphoneLarge {
+      width: 95%;
+      max-width: inherit;
+      display: block;
+      padding-top: 25px;
+    }
   }
 
   &__logo {
+    @include iphoneLarge {
+      width: 70px;
+    }
+
     a {
       display: block;
       width: 100%;
@@ -68,6 +86,9 @@ body {
   .navMenu {
     &__List {
       display: flex;
+      @include iphoneLarge {
+        display: none;
+      }
 
       &-item {
         margin-left: 50px;
@@ -93,6 +114,10 @@ body {
   overflow: hidden;
   position: relative;
   margin: 100px auto 110px;
+  @include iphoneLarge {
+    height: 584px;
+    margin: 60px auto 56px;
+  }
 
   #movie {
     position: absolute;
@@ -103,6 +128,7 @@ body {
     width: auto;
     height: auto;
     z-index: -10;
+    filter: opacity(0.8);
   }
 
   &__Lead {
@@ -110,13 +136,24 @@ body {
     margin: 0 auto;
     width: 90%;
     padding-top: 319px;
+    @include iphoneLarge {
+      width: 95%;
+      max-width: inherit;
+      padding-top: 144px;
+    }
 
     &-title {
       font-size: 70px;
       color: #5576ff;
       font-weight: bold;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
       opacity: 0;
+      text-shadow: 1px 1px 45px rgba(255, 255, 255, .7);
+
+      @include iphoneLarge {
+        font-size: 39px;
+        line-height: 1.2;
+      }
 
       &.in-visible {
         opacity: 1;
@@ -130,6 +167,11 @@ body {
       line-height: 1.6;
       font-weight: bold;
       opacity: 0;
+      text-shadow: 1px 1px 45px rgba(255, 255, 255, .7);
+
+      @include iphoneLarge {
+        font-size: 13px;
+      }
 
       &.in-visible {
         opacity: 1;
@@ -158,6 +200,10 @@ body {
     color: #000;
     text-align: center;
     margin-bottom: 95px;
+    @include iphoneLarge {
+      font-size: 35px;
+      margin-bottom: 45px;
+    }
   }
 
   &__contents {
@@ -204,8 +250,8 @@ body {
 
         &:nth-child(1) {
           padding: 100px 110px 0;
-          
-          @include pcWide{
+
+          @include pcWide {
             padding: 50px 3% 0;
           }
         }
@@ -216,7 +262,7 @@ body {
           color: #000;
           margin-bottom: 54px;
           text-align: center;
-          @include pcWide{
+          @include pcWide {
             margin-bottom: 40px;
           }
         }
@@ -269,7 +315,7 @@ body {
         &-img {
           img {
             width: 100%;
-            @include pcWide{
+            @include pcWide {
               object-fit: cover;
               height: 410px;
               overflow: hidden;
@@ -364,13 +410,13 @@ body {
           position: relative;
           text-align: center;
 
-          @include pcWide{
+          @include pcWide {
             height: 340px;
             overflow: hidden;
           }
 
           img {
-            @include pcWide{
+            @include pcWide {
               height: 340px;
               object-fit: contain;
               object-position: center;
@@ -448,8 +494,11 @@ body {
     margin: 0 auto;
     width: 90%;
     height: 250px;
-    @include pcWide{
+    @include pcWide {
       width: 95%;
+    }
+    @include iphoneLarge {
+      display: block;
     }
   }
 
@@ -458,44 +507,48 @@ body {
     font-weight: bold;
     color: #fff;
   }
-  
-  &__info{
+
+  &__info {
     margin-left: 290px;
-    @include pcWide{
+    @include pcWide {
       margin-left: 0;
     }
-    &-text{
+
+    &-text {
       font-size: 20px;
       color: #fff;
       line-height: 1.3;
       font-family: $hiragino;
     }
-    &-tel{
+
+    &-tel {
       font-size: 30px;
       color: #fff;
       line-height: 1.4;
       font-family: $hiragino;
       font-weight: bold;
-      a{
+
+      a {
         font-size: 30px;
         color: #fff;
         transition: all .3s;
         font-family: $hiragino;
-        &:hover{
+
+        &:hover {
           opacity: .4;
         }
       }
     }
   }
 
-  &__Link-Button{
+  &__Link-Button {
     width: 309px;
     height: 65px;
     line-height: 65px;
     border: 3px solid #fff;
     text-align: center;
 
-    a{
+    a {
       font-size: 20px;
       font-family: $hiragino;
       display: block;
@@ -503,7 +556,8 @@ body {
       height: 100%;
       transition: all .3s;
       color: #fff;
-      &:hover{
+
+      &:hover {
         opacity: .4;
       }
     }
@@ -515,7 +569,11 @@ body {
   background: #5576ff;
   padding: 100px 0 30px;
 
-  &__back{
+  @include iphoneLarge {
+    padding: 50px 0 15px;
+  }
+
+  &__back {
     display: none;
     position: absolute;
     width: 100px;
@@ -524,11 +582,19 @@ body {
     background: #fff;
     right: -100px;
     bottom: 30px;
-    @include pcWide{
+    @include pcWide {
       right: -20px;
     }
 
-    a{
+    @include iphoneLarge{
+      width: 50px;
+      height: 50px;
+      bottom: 0;
+      right: 0;
+      position: fixed;
+    }
+
+    a {
       display: block;
       width: 100%;
       height: 100%;
@@ -536,7 +602,7 @@ body {
       text-indent: -99999px;
       position: relative;
 
-      &:before{
+      &:before {
         content: '';
         position: absolute;
         left: 0;
@@ -549,9 +615,16 @@ body {
         width: 20px;
         height: 20px;
         transform: rotate(45deg);
+        @include iphoneLarge{
+          border-top: 2px solid #0076FF;
+          border-left: 2px solid #0076FF;
+          width: 15px;
+          height: 15px;
+          top: 15px;
+        }
       }
 
-      &:hover{
+      &:hover {
         opacity: .4;
       }
     }
@@ -566,18 +639,35 @@ body {
     justify-content: space-between;
     position: relative;
 
-    @include pcWide{
+    @include pcWide {
       width: 95%;
+    }
+    @include iphoneLarge {
+      width: 90%;
+      display: block;
+      max-width: inherit;
     }
   }
 
   //logo 会社名等
   .footer__info {
-    @include pcWide{
+    margin-bottom: 270px;
+
+    @include pcWide {
       width: 30%;
     }
+    @include iphoneLarge {
+      width: 90%;
+      margin: 0 auto;
+      position: relative;
+    }
+
     &-logo {
       margin-bottom: 55px;
+      @include iphoneLarge {
+        width: 150px;
+        margin: 0 auto 45px;
+      }
     }
 
     &-name {
@@ -585,6 +675,10 @@ body {
       color: #fff;
       font-weight: bold;
       margin-bottom: 12px;
+      @include iphoneLarge {
+        font-size: 19px;
+        margin-bottom: 23px;
+      }
     }
 
     &-add {
@@ -592,6 +686,10 @@ body {
       line-height: 1.5;
       color: #fff;
       margin-bottom: 45px;
+      @include iphoneLarge {
+        font-size: 14px;
+        margin-bottom: 30px;
+      }
 
       span {
         display: block;
@@ -604,7 +702,12 @@ body {
       line-height: 65px;
       text-align: center;
       border: 1px solid #fff;
-      margin-bottom: 70px;
+      @include iphoneLarge {
+        width: 100%;
+        margin: 0 auto 62px;
+        height: 50px;
+        line-height: 50px;
+      }
 
       a {
         display: block;
@@ -619,28 +722,50 @@ body {
         }
       }
     }
+  }
 
-    &-snsList {
-      margin-bottom: 140px;
+  &__snsList {
+    position: absolute;
+    left: 0;
+    bottom: 150px;
+    @include iphoneLarge {
+      position: static;
+      margin-bottom: 100px;
+      display: flex;
+      justify-content: center;
+    }
 
-      &-item {
-        a {
-          display: block;
-          width: 100%;
-          height: 100%;
-          transition: all 0.3s;
+    &-item {
+      @include iphoneLarge{
+        width: 40px;
+        height: 40px;
+      }
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s;
 
-          &:hover {
-            opacity: 0.5;
-          }
+        &:hover {
+          opacity: 0.5;
         }
       }
     }
+  }
 
-    &-copy {
-      font-size: 20px;
-      color: #fff;
-      font-weight: normal;
+  &__copy {
+    font-size: 20px;
+    color: #fff;
+    font-weight: normal;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    @include iphoneLarge {
+      font-size: 10px;
+      text-align: center;
+      position: static;
+      left: inherit;
+      bottom: inherit;
     }
   }
 
@@ -649,18 +774,30 @@ body {
     width: 850px;
     display: flex;
     flex-wrap: wrap;
-    @include pcWide{
+    @include pcWide {
       width: 65%;
+    }
+    @include iphoneLarge {
+      width: 100%;
+      display: block;
+      margin-bottom: 50px;
     }
 
     &Box {
       width: 250px;
       margin-left: 50px;
       margin-bottom: 41px;
-      @include pcWide{
+      @include pcWide {
         width: 28%;
         margin-left: 5%;
       }
+
+      @include iphoneLarge {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+      }
+
       &:nth-child(1) {
         margin-left: 0;
       }
@@ -676,10 +813,66 @@ body {
         padding-bottom: 7px;
         margin-bottom: 10px;
         border-bottom: 1px solid #fff;
+        @include iphoneLarge {
+          padding-bottom: 20px;
+          margin-bottom: 14px;
+          position: relative;
+          
+          &:before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 14px;
+            height: 14px;
+            border-top: 1.5px solid #fff;
+            transition: all 1s;
+            transform: rotate(0);
+          }
+          &:after {
+            content: '';
+            position: absolute;
+            right: -7px;
+            top: -14px;
+            bottom: 0;
+            margin: auto;
+            width: 14px;
+            height: 14px;
+            border-left: 1.5px solid #fff;
+            transition: all 1s;
+            transform: rotate(0);
+          }
+          
+          &.on{
+            &:before{
+              display: none;
+            }
+            &:after{
+              animation: menuslide .2s linear forwards;
+            }
+          }
+
+          @keyframes menuslide {
+            0%{
+              transform: rotate(0);
+            }
+            100%{
+              top: 0;
+              right: 0;
+              transform: rotate(90deg);
+            }
+          }
+        }
       }
     }
 
     &List {
+      @include iphoneLarge {
+        display: none;
+      }
+
       &-item {
         transition: all .3s;
 
@@ -694,6 +887,10 @@ body {
           display: block;
           width: 100%;
           height: 100%;
+          @include iphoneLarge {
+            font-size: 14px;
+            padding-left: 5%;
+          }
         }
       }
     }

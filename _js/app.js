@@ -16,6 +16,19 @@ $(function() {
     setTimeout(fadeItem1, 2000);
     setTimeout(fadeItem2, 3000);
   }
+
+  // var clickToggle = function(element){
+  //   $(element).slideToggle();
+  // }
+  //
+  // clickToggle('.')
+
+
+  $('.footer__menuBox-title').on('click', function(){
+    $(this).next().slideToggle();
+    $(this).toggleClass('on');
+  })
+
 });
 
 
