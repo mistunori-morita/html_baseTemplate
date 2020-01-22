@@ -1,0 +1,59 @@
+$hiragino: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', sans-serif;
+
+.section__Lead {
+  margin-top: 211px;
+  margin-bottom: 85px;
+
+  &-title {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 92px;
+  }
+
+  &-text {
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: bold;
+    font-family: $hiragino;
+    text-align: center;
+  }
+}
+
+.servicePage {
+  &__contents {
+  }
+
+  &__List {
+    &-item {
+      padding: 95px 0 110px;
+      margin-bottom: 30px;
+      box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.08);
+
+      .inner {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1520px;
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      &-img{
+        max-width: 305px;
+        width: 28%;
+        margin-right: 2%;
+
+        img{
+          width: 100%;
+          height: 305px;
+          object-position: center;
+          object-fit: contain;
+        }
+      }
+      &-contents{
+        max-width: 1130px;
+        width: 73%;
+      }
+    }
+  }
+}
