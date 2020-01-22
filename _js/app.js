@@ -17,16 +17,17 @@ $(function() {
     setTimeout(fadeItem2, 3000);
   }
 
-  // var clickToggle = function(element){
-  //   $(element).slideToggle();
-  // }
-  //
-  // clickToggle('.')
 
-
+  //footer
   $('.footer__menuBox-title').on('click', function(){
     $(this).next().slideToggle();
     $(this).toggleClass('on');
+  });
+
+  //sp nav menu
+  $('.navSp__Button').on('click', function(){
+    $(this).toggleClass('on');
+    $(this).prev().toggleClass('on');
   })
 
 });
