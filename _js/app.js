@@ -11,27 +11,47 @@ $(function() {
     fadeAdd(".mainVisual__Lead-sub", "in-visible");
   };
 
+  //文字色変更 mv
+  var count = 0;
+  var countup = function() {
+    console.log(count++);
+    var id = setTimeout(countup, 1000);
+
+    if (count == 8) {
+      $(".mainVisual__Lead")
+        .children()
+        .css("color", "#fff");
+    } else if (count > 13) {
+      $(".mainVisual__Lead")
+        .children()
+        .css("color", "#5576ff");
+
+      count = 0;
+    }
+  };
 
   window.onload = function() {
     setTimeout(fadeItem1, 2000);
     setTimeout(fadeItem2, 3000);
-  }
-
+    countup();
+  };
 
   //footer
-  $('.footer__menuBox-title').on('click', function(){
-    $(this).next().slideToggle();
-    $(this).toggleClass('on');
+  $(".footer__menuBox-title").on("click", function() {
+    $(this)
+      .next()
+      .slideToggle();
+    $(this).toggleClass("on");
   });
 
   //sp nav menu
-  $('.navSp__Button').on('click', function(){
-    $(this).toggleClass('on');
-    $(this).prev().toggleClass('on');
-  })
-
+  $(".navSp__Button").on("click", function() {
+    $(this).toggleClass("on");
+    $(this)
+      .prev()
+      .toggleClass("on");
+  });
 });
-
 
 $(function() {
   var $pageTop = $(".footer__back");

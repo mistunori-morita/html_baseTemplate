@@ -86,10 +86,10 @@ body {
   }
 
   .navMenu {
-    @include iphoneLarge{
+    @include iphoneLarge {
       display: none;
 
-      &.on{
+      &.on {
         background: rgba(255, 255, 255, 0.8);
         width: 100%;
         margin: auto;
@@ -105,14 +105,15 @@ body {
       }
 
       @keyframes fadeslide {
-        0%{
+        0% {
           transform: translateY(-100px);
         }
-        100%{
+        100% {
           transform: translateY(0);
         }
       }
     }
+
     &__List {
       display: flex;
       @include iphoneLarge {
@@ -122,7 +123,7 @@ body {
       &-item {
         margin-left: 50px;
         text-align: center;
-        @include iphoneLarge{
+        @include iphoneLarge {
           margin-left: 0;
           margin-bottom: 35px;
         }
@@ -141,9 +142,9 @@ body {
   }
 
   //sp button navmenu
-  .navSp__Button{
+  .navSp__Button {
     display: none;
-    @include iphoneLarge{
+    @include iphoneLarge {
       display: block;
       position: absolute;
       right: 0;
@@ -155,20 +156,21 @@ body {
       background: url("../img/header/icon_nav_01.svg") no-repeat center center;
       background-size: contain;
       z-index: 5;
+      transition: 0.2s;
 
-      &.on{
+      &.on {
         width: 20px;
         height: 20px;
         background: url("../img/header/icon_nav_02.svg") no-repeat center center;
         background-size: contain;
-        animation: rotateNav .2s  ease-in forwards;
+        animation: rotateNav .2s ease-in forwards;
       }
 
       @keyframes rotateNav {
-        0%{
+        0% {
           transform: rotate(0);
         }
-        100%{
+        100% {
           transform: rotate(180deg);
         }
       }
@@ -218,6 +220,7 @@ body {
       margin-bottom: 20px;
       opacity: 0;
       text-shadow: 1px 1px 45px rgba(255, 255, 255, .7);
+      transition: 1s;
 
       @include iphoneLarge {
         font-size: 39px;
@@ -226,7 +229,7 @@ body {
 
       &.in-visible {
         opacity: 1;
-        animation: fadeIn 0.5s ease-out;
+        animation: fadeIn 0.5s ease-out forwards;
       }
     }
 
@@ -237,6 +240,7 @@ body {
       font-weight: bold;
       opacity: 0;
       text-shadow: 1px 1px 45px rgba(255, 255, 255, .7);
+      transition: 1s;
 
       @include iphoneLarge {
         font-size: 13px;
@@ -244,7 +248,7 @@ body {
 
       &.in-visible {
         opacity: 1;
-        animation: fadeIn 0.5s ease-out;
+        animation: fadeIn 0.5s ease-out forwards;
       }
     }
   }
@@ -277,7 +281,7 @@ body {
 
   &__contents {
     margin-bottom: 100px;
-    @include iphoneLarge{
+    @include iphoneLarge {
       margin-bottom: 50px;
     }
 
@@ -285,13 +289,14 @@ body {
       display: flex;
       box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.08);
       margin-bottom: 30px;
-      @include iphoneLarge{
+      @include iphoneLarge {
         display: block;
       }
+
       &-item {
         position: relative;
         width: 50%;
-        @include iphoneLarge{
+        @include iphoneLarge {
           width: 100%;
         }
 
@@ -301,7 +306,7 @@ body {
           @include pcWide {
             padding: 50px 3% 0;
           }
-          @include iphoneLarge{
+          @include iphoneLarge {
             padding: 45px 5% 0;
           }
         }
@@ -316,7 +321,7 @@ body {
             margin-bottom: 40px;
           }
 
-          @include iphoneLarge{
+          @include iphoneLarge {
             font-size: 20px;
             margin-bottom: 45px;
           }
@@ -328,7 +333,7 @@ body {
           line-height: 1.5;
           height: 163px;
 
-          @include iphoneLarge{
+          @include iphoneLarge {
             height: auto;
             font-size: 14px;
             margin-bottom: 25px;
@@ -343,12 +348,13 @@ body {
           text-align: center;
           transition: all 0.2s;
           box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
-          @include iphoneLarge{
+          @include iphoneLarge {
             width: 200px;
             height: 50px;
             line-height: 50px;
             margin-bottom: 25px;
           }
+
           &:hover {
             opacity: 0.6;
             box-shadow: 0 20px 80px rgba(0, 0, 0, 0.09);
@@ -362,7 +368,7 @@ body {
             width: 100%;
             height: 100%;
             font-family: $hiragino;
-            @include iphoneLarge{
+            @include iphoneLarge {
               font-size: 15px;
             }
           }
@@ -379,7 +385,7 @@ body {
           top: 0;
           font-size: 14px;
           color: #fff;
-          @include iphoneLarge{
+          @include iphoneLarge {
             font-size: 13px;
             width: 170px;
             height: 30px;
@@ -389,15 +395,16 @@ body {
         }
 
         &-img {
-          @include iphoneLarge{
+          @include iphoneLarge {
             transition: all .3s;
-            &:hover{
+            &:hover {
               opacity: .6;
               transform: scale(0.97);
               padding: 5px;
               border: 1px solid #ddd;
             }
           }
+
           img {
             width: 100%;
             @include pcWide {
@@ -406,7 +413,7 @@ body {
               overflow: hidden;
               object-position: -20px 10px;
             }
-            @include iphoneLarge{
+            @include iphoneLarge {
               height: auto;
               object-position: center;
             }
@@ -422,7 +429,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include iphoneLarge{
+    @include iphoneLarge {
       width: 100%;
       display: block;
       margin-bottom: 145px;
@@ -435,13 +442,13 @@ body {
       text-align: center;
       border: 3px solid #000;
 
-      @include iphoneLarge{
+      @include iphoneLarge {
         width: 200px;
         height: 50px;
         line-height: 50px;
         border: 2px solid #000;
         margin: 0 auto;
-        &:nth-child(n+ 2){
+        &:nth-child(n+ 2) {
           margin-top: 20px;
         }
       }
@@ -454,7 +461,7 @@ body {
         width: 100%;
         height: 100%;
         transition: all 0.3s;
-        @include iphoneLarge{
+        @include iphoneLarge {
           font-size: 15px;
         }
 
@@ -470,7 +477,7 @@ body {
 .news {
   background: #f5f5f5;
   padding: 110px 0 200px;
-  @include iphoneLarge{
+  @include iphoneLarge {
     padding: 0 0 200px;
     background: none;
   }
@@ -481,7 +488,7 @@ body {
     color: #000;
     text-align: center;
     margin-bottom: 95px;
-    @include iphoneLarge{
+    @include iphoneLarge {
       font-size: 35px;
       margin-bottom: 42px;
     }
@@ -491,7 +498,7 @@ body {
     width: 90%;
     max-width: 1520px;
     margin: 0 auto 100px;
-    @include iphoneLarge{
+    @include iphoneLarge {
       width: 100%;
       max-width: inherit;
       margin: 0 auto 50px;
@@ -502,9 +509,10 @@ body {
       flex-wrap: wrap;
       justify-content: space-between;
 
-      @include iphoneLarge{
+      @include iphoneLarge {
         display: block;
       }
+
       &-item {
         max-width: 745px;
         width: 48%;
@@ -513,7 +521,7 @@ body {
         margin-bottom: 30px;
         padding-bottom: 45px;
         position: relative;
-        @include iphoneLarge{
+        @include iphoneLarge {
           max-width: inherit;
           width: 100%;
           padding-bottom: 5%;
@@ -531,7 +539,7 @@ body {
           color: #fff;
           background: #5576ff;
           z-index: 2;
-          @include iphoneLarge{
+          @include iphoneLarge {
             width: 123px;
             height: 30px;
             line-height: 30px;
@@ -540,7 +548,7 @@ body {
         }
 
         &-thumbnail {
-          max-height: 450px;
+          height: 450px;
           margin-bottom: 25px;
           position: relative;
           text-align: center;
@@ -551,19 +559,21 @@ body {
             overflow: hidden;
           }
 
-          @include iphoneLarge{
+          @include iphoneLarge {
             max-height: inherit;
             margin-bottom: 15px;
             height: 375px;
           }
 
           img {
+            height: 450px;
+            object-fit: contain;
+            object-position: center;
+
             @include pcWide {
               height: 340px;
-              object-fit: contain;
-              object-position: center;
             }
-            @include iphoneLarge{
+            @include iphoneLarge {
               height: 375px;
             }
           }
@@ -574,7 +584,7 @@ body {
           font-size: 15px;
           color: #000;
           margin-bottom: 20px;
-          @include iphoneLarge{
+          @include iphoneLarge {
             font-size: 14px;
             margin-bottom: 10px;
             padding: 0 5%;
@@ -588,7 +598,7 @@ body {
           margin-bottom: 15px;
           color: #000;
           font-weight: bold;
-          @include iphoneLarge{
+          @include iphoneLarge {
             font-size: 20px;
             margin-bottom: 17px;
             padding: 0 5%;
@@ -601,7 +611,7 @@ body {
           font-size: 20px;
           color: #000;
           line-height: 1.6;
-          @include iphoneLarge{
+          @include iphoneLarge {
             font-size: 14px;
             padding: 0 5%;
           }
@@ -621,7 +631,7 @@ body {
       line-height: 65px;
       text-align: center;
       border: 3px solid #000;
-      @include iphoneLarge{
+      @include iphoneLarge {
         width: 200px;
         height: 50px;
         line-height: 50px;
@@ -637,7 +647,7 @@ body {
         width: 100%;
         height: 100%;
         transition: all 0.3s;
-        @include iphoneLarge{
+        @include iphoneLarge {
           font-size: 15px;
         }
 
@@ -654,7 +664,7 @@ body {
 .contact {
   background: url("../img/top/contact_bg_01.svg") repeat center;
   background-size: cover;
-  @include iphoneLarge{
+  @include iphoneLarge {
     padding: 50px 0 95px;
   }
 
@@ -681,7 +691,7 @@ body {
     font-size: 50px;
     font-weight: bold;
     color: #fff;
-    @include iphoneLarge{
+    @include iphoneLarge {
       font-size: 35px;
       margin-bottom: 42px;
       text-align: center;
@@ -699,12 +709,12 @@ body {
       color: #fff;
       line-height: 1.3;
       font-family: $hiragino;
-      @include iphoneLarge{
+      @include iphoneLarge {
         font-size: 14px;
         text-align: center;
         line-height: 1.5;
         margin-bottom: 5px;
-        span{
+        span {
           display: block;
         }
       }
@@ -716,19 +726,20 @@ body {
       line-height: 1.4;
       font-family: $hiragino;
       font-weight: bold;
-      @include iphoneLarge{
+      @include iphoneLarge {
         text-align: center;
         font-size: 20px;
         padding: 0 5%;
         margin-bottom: 38px;
       }
+
       a {
         font-size: 30px;
         color: #fff;
         transition: all .3s;
         font-family: $hiragino;
 
-        @include iphoneLarge{
+        @include iphoneLarge {
           text-align: center;
           font-size: 20px;
           padding: 0 5%;
@@ -747,7 +758,7 @@ body {
     line-height: 65px;
     border: 3px solid #fff;
     text-align: center;
-    @include iphoneLarge{
+    @include iphoneLarge {
       width: 270px;
       height: auto;
       text-align: center;
@@ -755,6 +766,7 @@ body {
       margin: 0 auto;
       padding: 6px 0;
     }
+
     a {
       font-size: 20px;
       font-family: $hiragino;
@@ -764,9 +776,9 @@ body {
       transition: all .3s;
       color: #fff;
 
-      @include iphoneLarge{
+      @include iphoneLarge {
         line-height: 1.3;
-        span{
+        span {
           display: block;
         }
       }
@@ -800,7 +812,7 @@ body {
       right: -20px;
     }
 
-    @include iphoneLarge{
+    @include iphoneLarge {
       width: 50px;
       height: 50px;
       bottom: 0;
@@ -829,7 +841,7 @@ body {
         width: 20px;
         height: 20px;
         transform: rotate(45deg);
-        @include iphoneLarge{
+        @include iphoneLarge {
           border-top: 2px solid #0076FF;
           border-left: 2px solid #0076FF;
           width: 15px;
@@ -950,10 +962,11 @@ body {
     }
 
     &-item {
-      @include iphoneLarge{
+      @include iphoneLarge {
         width: 40px;
         height: 40px;
       }
+
       a {
         display: block;
         width: 100%;
@@ -1031,7 +1044,7 @@ body {
           padding-bottom: 20px;
           margin-bottom: 14px;
           position: relative;
-          
+
           &:before {
             content: '';
             position: absolute;
@@ -1058,21 +1071,22 @@ body {
             transition: all 1s;
             transform: rotate(0);
           }
-          
-          &.on{
-            &:before{
+
+          &.on {
+            &:before {
               display: none;
             }
-            &:after{
+
+            &:after {
               animation: menuslide .2s linear forwards;
             }
           }
 
           @keyframes menuslide {
-            0%{
+            0% {
               transform: rotate(0);
             }
-            100%{
+            100% {
               top: 0;
               right: 0;
               transform: rotate(90deg);
