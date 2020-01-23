@@ -2,40 +2,121 @@
 .section__Lead {
   margin-top: 211px;
   margin-bottom: 85px; }
+  @media screen and (max-width: 414px) {
+    .section__Lead {
+      margin-top: 100px;
+      margin-bottom: 30px;
+      padding: 0 5%; } }
   .section__Lead-title {
     font-size: 30px;
     text-align: center;
     font-weight: bold;
     margin-bottom: 92px; }
+    @media screen and (max-width: 414px) {
+      .section__Lead-title {
+        font-size: 35px;
+        margin-bottom: 45px; } }
   .section__Lead-text {
     font-size: 20px;
     line-height: 1.4;
     font-weight: bold;
     font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
     text-align: center; }
+    @media screen and (max-width: 414px) {
+      .section__Lead-text {
+        font-size: 14px;
+        text-align: left;
+        line-height: 1.5; } }
+
+@media screen and (max-width: 414px) {
+  .servicePage {
+    margin-bottom: 170px; } }
 
 .servicePage__List-item {
   padding: 95px 0 110px;
   margin-bottom: 30px;
   box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.08); }
+  @media screen and (max-width: 414px) {
+    .servicePage__List-item {
+      padding: 30px 5% 20px; } }
   .servicePage__List-item .inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     max-width: 1520px;
     width: 90%;
     margin: 0 auto; }
+    @media screen and (max-width: 414px) {
+      .servicePage__List-item .inner {
+        display: block;
+        width: 100%;
+        max-width: inherit; } }
   .servicePage__List-item-img {
-    max-width: 305px;
-    width: 28%;
-    margin-right: 2%; }
+    width: 307px;
+    margin-right: 51px; }
+    @media screen and (max-width: 414px) {
+      .servicePage__List-item-img {
+        width: 200px;
+        margin: 0 auto 25px; } }
     .servicePage__List-item-img img {
       width: 100%;
       height: 305px;
       object-position: center;
       object-fit: contain; }
+      @media screen and (max-width: 414px) {
+        .servicePage__List-item-img img {
+          height: auto; } }
   .servicePage__List-item-contents {
-    max-width: 1130px;
-    width: 73%; }
+    width: 1130px; }
+    @media screen and (max-width: 414px) {
+      .servicePage__List-item-contents {
+        width: 100%; } }
+  .servicePage__List-item-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 44px;
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif; }
+    @media screen and (max-width: 414px) {
+      .servicePage__List-item-title {
+        font-size: 20px;
+        color: #5576FF;
+        text-align: center;
+        margin-bottom: 27px; } }
+  .servicePage__List-item-text {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 31px;
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif; }
+    @media screen and (max-width: 414px) {
+      .servicePage__List-item-text {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 35px; } }
+  .servicePage__List-item-tagList {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -1%; }
+    @media screen and (max-width: 414px) {
+      .servicePage__List-item-tagList {
+        margin-left: 0;
+        display: block; } }
+    .servicePage__List-item-tagList-item {
+      width: 350px;
+      margin-left: 1%;
+      background: #F5F5F5;
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 10px;
+      padding: 16px 2px; }
+      @media screen and (max-width: 1519px) {
+        .servicePage__List-item-tagList-item {
+          width: 325px; } }
+      @media screen and (max-width: 414px) {
+        .servicePage__List-item-tagList-item {
+          width: 100%;
+          font-size: 14px;
+          padding: 8px 0;
+          margin-left: 0; } }
 
 * {
   box-sizing: border-box; }

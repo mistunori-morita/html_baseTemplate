@@ -12,19 +12,17 @@ $(function() {
   };
 
   //文字色変更 mv
+  var $pageTaget = $(".mainVisual__Lead");
+  if (!$pageTaget.length) return false;
   var count = 0;
   var countup = function() {
-    console.log(count++);
+    // console.log(count++);
     var id = setTimeout(countup, 1000);
 
     if (count == 8) {
-      $(".mainVisual__Lead")
-        .children()
-        .css("color", "#fff");
+      $pageTaget.children().css("color", "#fff");
     } else if (count > 13) {
-      $(".mainVisual__Lead")
-        .children()
-        .css("color", "#5576ff");
+      $pageTaget.children().css("color", "#5576ff");
 
       count = 0;
     }
@@ -35,7 +33,9 @@ $(function() {
     setTimeout(fadeItem2, 3000);
     countup();
   };
+});
 
+$(function() {
   //footer
   $(".footer__menuBox-title").on("click", function() {
     $(this)
@@ -51,9 +51,7 @@ $(function() {
       .prev()
       .toggleClass("on");
   });
-});
 
-$(function() {
   var $pageTop = $(".footer__back");
   if (!$pageTop.length) return false;
 
