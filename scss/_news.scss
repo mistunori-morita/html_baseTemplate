@@ -31,7 +31,7 @@ $hiragino: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', sans-serif;
   margin: 0 auto 50px;
   border-bottom: 1px solid #C4C4C4;
 
-  @include iphoneLarge{
+  @include iphoneLarge {
     width: 100%;
     max-width: inherit;
     margin-bottom: 20px;
@@ -43,12 +43,12 @@ $hiragino: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', sans-serif;
     padding-bottom: 20px;
     position: relative;
     transition: all .3s;
-    @include iphoneLarge{
+    @include iphoneLarge {
       width: 30%;
       padding-bottom: 8px;
     }
 
-    &:hover{
+    &:hover {
       cursor: pointer;
       opacity: .4;
     }
@@ -85,33 +85,204 @@ $hiragino: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', sans-serif;
     font-weight: bold;
     color: #000;
     font-family: $hiragino;
-    @include iphoneLarge{
+    @include iphoneLarge {
       font-size: 12px;
     }
   }
 }
 
 
-
+//ニュース一覧
 .newsPage {
   margin-bottom: 200px;
-  @include iphoneLarge{
+  @include iphoneLarge {
     margin-bottom: 140px;
   }
   //共通コンポーネント（TOP） 各ページで調整
-  .news__contents{
+  .news__contents {
     margin-bottom: 70px;
 
-    @include iphoneLarge{
+    @include iphoneLarge {
       margin-bottom: 50px;
     }
 
-    .news__List{
-      &-item{
-        &-thumbnail{
-          @include iphoneLarge{
+    .news__List {
+      &-item {
+        &-thumbnail {
+          @include iphoneLarge {
             height: 228px;
-            img{
+            img {
+              height: 228px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//ニュース詳細
+.newsSinglePage {
+  background: #F5F5F5;
+  margin-top: 150px;
+  padding-bottom: 200px;
+
+  @include iphoneLarge {
+    margin-top: 90px;
+    padding-bottom: 140px;
+  }
+
+  //news シングル記事
+  .news__article {
+    background: #fff;
+    padding-bottom: 150px;
+    @include iphoneLarge{
+      padding-bottom: 68px;
+    }
+
+    .inner {
+      max-width: 1290px;
+      margin: 0 auto;
+      width: 90%;
+      @include iphoneLarge{
+        max-width: inherit;
+      }
+    }
+
+    &Notes {
+      display: flex;
+      margin-bottom: 100px;
+      @include iphoneLarge{
+        display: block;
+        margin-bottom: 25px;
+      }
+    }
+
+    &-info {
+      width: 860px;
+      margin-right: 120px;
+      @include iphoneLarge{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 17px;
+      }
+
+      &-topic {
+        font-size: 20px;
+        color: #5576FF;
+        font-weight: normal;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #C4C4C4;
+        margin-bottom: 25px;
+        @include iphoneLarge{
+          padding-bottom: 8px;
+          margin-bottom: 15px;
+          font-size: 15px;
+        }
+      }
+
+      &-title {
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 1.5;
+        @include iphoneLarge{
+          font-size: 20px;
+        }
+      }
+    }
+
+    &-sub {
+      min-height: 90px;
+      padding-top: 24px;
+      border-left: 5px solid #5576FF;
+      padding-left: 30px;
+      padding-bottom: 5px;
+
+      @include iphoneLarge{
+        min-height: inherit;
+        padding: 0;
+        border: none;
+      }
+
+      &-date {
+        font-size: 20px;
+        margin-bottom: 15px;
+        @include iphoneLarge{
+          font-size: 15px;
+          margin-bottom: 7px;
+        }
+      }
+
+      &-category {
+        &-item {
+          font-size: 20px;
+          line-height: 1.3;
+          @include iphoneLarge{
+            font-size: 15px;
+          }
+
+          span{
+            @include pcWide{
+              display: inline-block;
+            }
+            @include iphoneLarge{
+              display: inline;
+            }
+          }
+        }
+      }
+    }
+
+    &-contents {
+      pre, span, a, p {
+        line-height: 1.7;
+        font-size: 20px;
+        margin-bottom: 42px;
+        @include iphoneLarge{
+          font-size: 14px;
+          line-height: 1.8;
+          margin-bottom: 27px;
+        }
+      }
+
+      img {
+        width: 100%;
+        margin-bottom: 50px;
+        @include iphoneLarge{
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+
+  //共通コンポーネント（TOP） 各ページで調整
+  .news__contents {
+    padding-top: 96px;
+    margin-bottom: 70px;
+
+    @include iphoneLarge {
+      padding-top: 56px;
+      margin-bottom: 50px;
+    }
+
+    &-title {
+      font-size: 50px;
+      font-weight: bold;
+      margin-bottom: 94px;
+      text-align: center;
+      @include iphoneLarge{
+        margin-bottom: 52px;
+        font-size: 35px;
+      }
+    }
+
+    .news__List {
+      &-item {
+        &-thumbnail {
+          @include iphoneLarge {
+            height: 228px;
+            img {
               height: 228px;
             }
           }
