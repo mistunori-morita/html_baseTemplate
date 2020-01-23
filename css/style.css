@@ -118,6 +118,94 @@
           padding: 8px 0;
           margin-left: 0; } }
 
+.section__Lead {
+  margin-top: 211px;
+  margin-bottom: 95px; }
+  @media screen and (max-width: 414px) {
+    .section__Lead {
+      margin-top: 100px;
+      margin-bottom: 50px;
+      padding: 0; } }
+  .section__Lead-title {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 92px; }
+    @media screen and (max-width: 414px) {
+      .section__Lead-title {
+        font-size: 35px;
+        margin-bottom: 35px; } }
+
+.section__menuList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1520px;
+  width: 90%;
+  margin: 0 auto 50px;
+  border-bottom: 1px solid #C4C4C4; }
+  @media screen and (max-width: 414px) {
+    .section__menuList {
+      width: 100%;
+      max-width: inherit;
+      margin-bottom: 20px; } }
+  .section__menuList-item {
+    width: 240px;
+    text-align: center;
+    padding-bottom: 20px;
+    position: relative;
+    transition: all .3s; }
+    @media screen and (max-width: 414px) {
+      .section__menuList-item {
+        width: 30%;
+        padding-bottom: 8px; } }
+    .section__menuList-item:hover {
+      cursor: pointer;
+      opacity: .4; }
+    .section__menuList-item:hover:before {
+      animation: lineHover .4s ease-in-out both; }
+    .section__menuList-item:before {
+      width: 0;
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      background: #5E85FF;
+      height: 5px; }
+
+@keyframes lineHover {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
+  .section__menuList a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif; }
+    @media screen and (max-width: 414px) {
+      .section__menuList a {
+        font-size: 12px; } }
+
+.newsPage {
+  margin-bottom: 200px; }
+  @media screen and (max-width: 414px) {
+    .newsPage {
+      margin-bottom: 140px; } }
+  .newsPage .news__contents {
+    margin-bottom: 70px; }
+    @media screen and (max-width: 414px) {
+      .newsPage .news__contents {
+        margin-bottom: 50px; } }
+    @media screen and (max-width: 414px) {
+      .newsPage .news__contents .news__List-item-thumbnail {
+        height: 228px; }
+        .newsPage .news__contents .news__List-item-thumbnail img {
+          height: 228px; } }
+
 * {
   box-sizing: border-box; }
 
