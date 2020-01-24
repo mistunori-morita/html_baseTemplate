@@ -36,6 +36,23 @@ $(function() {
 });
 
 $(function() {
+  //リクルートモーダル　職種募集部分
+  $(".recruit__recruitingList-item").on("click", function() {
+    var index = $(this).index() + 1;
+    $(".recruit__modalList").fadeIn();
+    $(".recruit__modalList li:nth-child(" + index + ")").fadeToggle(200);
+  });
+
+  $(".recruit__modalList-Close").on("click", function() {
+    $(".recruit__modalList li").hide();
+    $(this)
+      .parents()
+      .find(".recruit__modalList")
+      .fadeOut();
+  });
+});
+
+$(function() {
   //footer
   $(".footer__menuBox-title").on("click", function() {
     $(this)

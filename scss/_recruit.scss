@@ -1,0 +1,600 @@
+$hiragino: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', sans-serif;
+
+.recruitPage {
+  margin-top: 100px;
+  @include iphoneLarge{
+    margin-top: 60px;
+  }
+
+  .mainvisual {
+    padding-top: 387px;
+    height: 980px;
+    background: url("../img/recruit/mainvisual_01.svg") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    margin-bottom: 200px;
+    @include iphoneLarge{
+      height: 540px;
+      margin-bottom: 97px;
+      padding-top: 187px;
+    }
+
+    &-title {
+      font-size: 50px;
+      font-weight: bold;
+      color: #fff;
+      font-family: $hiragino;
+      text-align: center;
+      margin-bottom: 83px;
+      @include iphoneLarge{
+        font-size: 20px;
+        margin-bottom: 60px;
+      }
+    }
+
+    &-sub {
+      font-size: 30px;
+      line-height: 1.3;
+      color: #fff;
+      font-family: $hiragino;
+      text-align: center;
+      @include iphoneLarge{
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  //コンテンツ
+  &__contents {
+    .recruit__Lead {
+      margin-bottom: 194px;
+      @include iphoneLarge{
+        width: 90%;
+        margin: 0 auto 43px;
+      }
+
+      &-title {
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 52px;
+        @include iphoneLarge{
+          font-size: 20px;
+          margin-bottom: 25px;
+        }
+      }
+
+      &-catch {
+        font-size: 30px;
+        font-family: $hiragino;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 41px;
+
+        @include iphoneLarge{
+          font-size: 14px;
+          margin-bottom: 16px;
+          line-height: 1.6;
+        }
+
+        br{
+          display: none;
+          @include iphoneLarge{
+            display: block;
+          }
+        }
+      }
+
+      &-text {
+        font-size: 20px;
+        font-family: $hiragino;
+        text-align: center;
+        line-height: 1.6;
+        @include iphoneLarge{
+          font-size: 14px;
+        }
+      }
+    }
+
+    .recruit__imgList {
+      margin-bottom: 100px;
+      display: flex;
+      @include iphoneLarge{
+        display: block;
+        width: 90%;
+        margin: 0 auto 100px;
+      }
+
+      &-img {
+        width: 100%;
+      }
+    }
+
+    .recruit__recruiting {
+      margin-bottom: 170px;
+      @include iphoneLarge{
+        margin-bottom: 90px;
+      }
+
+      &-title {
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 47px;
+        font-weight: bold;
+        @include iphoneLarge{
+          font-size: 20px;
+          margin-bottom: 28px;
+        }
+      }
+
+      &List {
+        display: flex;
+        flex-wrap: wrap;
+        width: 830px;
+        margin: 0 auto;
+        @include iphoneLarge{
+          width: 90%;
+        }
+
+        &-item {
+          width: 400px;
+          min-height: 100px;
+          border: 3px solid #000;
+          margin-bottom: 30px;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          transition: all .3s;
+
+          @include iphoneLarge{
+            width: 48%;
+            margin-bottom: 10px;
+            min-height: inherit;
+            height: 80px;
+          }
+
+          //急募のアイコン
+          &.urgent-recruitment-icon {
+            position: relative;
+
+            &:before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              background: url("../img/recruit/recruit_icon_01.svg") no-repeat left center;
+              width: 75px;
+              height: 75px;
+              -webkit-background-size: contain;
+              background-size: contain;
+              @include iphoneLarge{
+                width: 50px;
+                height: 50px;
+              }
+              @include iphoneSmall{
+                width: 35px;
+                height: 35px;
+              }
+            }
+          }
+
+          &:hover {
+            opacity: .4;
+            cursor: pointer;
+          }
+
+          &:nth-child(even) {
+            margin-left: 30px;
+            @include iphoneLarge{
+              margin-left: 4%;
+            }
+          }
+
+          &-title {
+            font-size: 20px;
+            font-family: $hiragino;
+            font-weight: bold;
+            text-align: center;
+            @include iphoneLarge{
+              font-size: 14px;
+              line-height: 1.4;
+            }
+
+            br {
+              display: none;
+              @include iphoneLarge{
+                display: block;
+              }
+            }
+          }
+
+          &-text {
+            font-size: 20px;
+            font-family: $hiragino;
+            text-align: center;
+            margin-top: 15px;
+            @include iphoneLarge{
+              font-size: 14px;
+              margin-top: 2px;
+              line-height: 1.3;
+            }
+
+            br{
+              display: none;
+              @include iphoneLarge{
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .recruit__modalList {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.8);
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      z-index: 4;
+      padding: 100px 0;
+      overflow: scroll;
+      display: none;
+      @include iphoneLarge{
+        padding: 90px 0;
+      }
+
+      &-item {
+        display: none;
+        background: #fff;
+        max-width: 1290px;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 215px;
+        @include iphoneLarge{
+          max-width: inherit;
+          padding-bottom: 100px;
+        }
+      }
+
+      &-mv {
+        width: 100%;
+        height: 711px;
+        text-align: center;
+        margin-bottom: 100px;
+        @include iphoneLarge{
+          margin-bottom: 47px;
+          height: auto;
+        }
+      }
+
+      &-Lead {
+        margin-bottom: 76px;
+        @include iphoneLarge{
+          margin-bottom: 45px;
+        }
+
+        &-sub {
+          font-size: 20px;
+          text-align: center;
+          font-family: $hiragino;
+          margin-bottom: 12px;
+          @include iphoneLarge{
+            font-size: 13px;
+            margin-bottom: 4px;
+          }
+        }
+
+        &-title {
+          font-size: 50px;
+          font-weight: bold;
+          text-align: center;
+          line-height: 1.4;
+          @include iphoneLarge{
+            font-size: 20px;
+          }
+          @include iphoneSmall{
+            font-size: 16px;
+            padding: 0 5%;
+          }
+
+          span {
+            display: block;
+          }
+        }
+      }
+
+      &-contents {
+        max-width: 897px;
+        width: 90%;
+        margin: 0 auto 188px;
+        @include iphoneLarge{
+          max-width: inherit;
+          margin: 0 auto 95px;
+        }
+
+        &-items {
+          margin-bottom: 68px;
+          @include iphoneLarge{
+            margin-bottom: 46px;
+          }
+        }
+
+        &-title {
+          font-size: 30px;
+          font-weight: bold;
+          font-family: $hiragino;
+          margin-bottom: 42px;
+          @include iphoneLarge{
+            font-size: 14px;
+            margin-bottom: 22px;
+          }
+        }
+
+        &-text {
+          font-size: 20px;
+          font-family: $hiragino;
+          line-height: 1.6;
+          margin-bottom: 37px;
+          @include iphoneLarge{
+            font-size: 14px;
+            margin-bottom: 17px;
+          }
+        }
+      }
+
+      &-Entry {
+        width: 400px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        border: 3px solid #000;
+        margin: 0 auto 100px;
+        @include iphoneLarge{
+          width: 80%;
+          height: 50px;
+          line-height: 50px;
+          margin-bottom: 50px;
+        }
+
+        a {
+          width: 100%;
+          height: 100%;
+          display: block;
+          font-size: 20px;
+          font-weight: bold;
+          font-family: $hiragino;
+          color: #000;
+          transition: all .3s;
+
+          &:hover {
+            opacity: .5;
+          }
+        }
+      }
+
+      &-Close {
+        text-align: center;
+        width: 300px;
+        height: 65px;
+        line-height: 65px;
+        margin: 0 auto;
+        border: 1px solid #000;
+        font-size: 20px;
+        transition: all .3s;
+        cursor: pointer;
+        @include iphoneLarge{
+          width: 80%;
+          height: 50px;
+          line-height: 50px;
+        }
+        &:hover {
+          opacity: .5;
+        }
+      }
+    }
+
+    .recruit__conditions {
+      background: #F5F5F5;
+      padding: 100px 0 200px;
+      @include iphoneLarge{
+        padding: 50px 0 150px;
+      }
+
+      &-title {
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 100px;
+        @include iphoneLarge{
+          font-size: 20px;
+          margin-bottom: 47px;
+        }
+      }
+
+      &List {
+        width: 1000px;
+        margin: 0 auto 100px;
+        @include iphoneLarge{
+          width: 90%;
+          margin: 0 auto 43px;
+        }
+
+        &-title {
+          font-size: 30px;
+          font-weight: bold;
+          margin-bottom: 50px;
+          text-align: center;
+          @include iphoneLarge{
+            font-size: 14px;
+            margin-bottom: 20px;
+          }
+        }
+
+        &-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 28px;
+          @include iphoneLarge{
+            justify-content: space-between;
+            margin-bottom: 0;
+            align-items: inherit;
+          }
+
+          &-title {
+            width: 237px;
+            font-size: 20px;
+            font-family: $hiragino;
+            font-weight: bold;
+            @include iphoneLarge{
+              font-size: 14px;
+              font-weight: normal;
+              width: 22%;
+              line-height: 1.7;
+              padding-top: 3%;
+            }
+          }
+
+          &-text {
+            width: 759px;
+            font-size: 20px;
+            font-family: $hiragino;
+            line-height: 1.5;
+            padding: 5px 0 5px 35px;
+            border-left: 1px solid #C4C4C4;
+
+            @include iphoneLarge{
+              font-size: 14px;
+              width: 73%;
+              line-height: 1.7;
+              padding: 3% 0 3% 5%;
+            }
+          }
+        }
+      }
+    }
+
+    .recruit__employment {
+      margin-bottom: 100px;
+      @include iphoneLarge{
+        margin-bottom: 47px;
+      }
+
+      &-title {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 50px;
+        text-align: center;
+        @include iphoneLarge{
+          font-size: 14px;
+          margin-bottom: 17px;
+        }
+      }
+
+      &-text {
+        font-size: 20px;
+        font-family: $hiragino;
+        text-align: center;
+        @include iphoneLarge{
+          font-size: 14px;
+        }
+      }
+    }
+
+    .recruit__welfare {
+      &-title {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 50px;
+        text-align: center;
+        @include iphoneLarge{
+          font-size: 14px;
+          margin-bottom: 18px;
+        }
+      }
+
+      &List {
+        width: 1290px;
+        margin: 0 auto;
+        @include iphoneLarge{
+          width: 90%;
+        }
+
+        &-item {
+          display: flex;
+          margin-bottom: 35px;
+          @include iphoneLarge{
+            margin-bottom: 25px;
+            justify-content: space-between;
+          }
+
+          &-title {
+            width: 240px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: $hiragino;
+            @include iphoneLarge{
+              width: 22%;
+              font-size: 14px;
+              font-weight: normal;
+            }
+          }
+
+          &-info {
+            border-left: 1px solid #C4C4C4;
+            width: 1049px;
+            display: flex;
+            padding-left: 35px;
+            justify-content: space-between;
+
+            @include iphoneLarge{
+              width: 74%;
+              padding-left: 4%;
+              display: block;
+            }
+
+            &-items {
+              width: 478px;
+              @include iphoneLarge{
+                width: 100%;
+              }
+
+              &-list {
+                margin-bottom: 59px;
+                @include iphoneLarge{
+                  margin-bottom: 25px;
+                }
+
+                &-title {
+                  font-size: 20px;
+                  font-weight: bold;
+                  font-family: $hiragino;
+                  margin-bottom: 13px;
+                  @include iphoneLarge{
+                    font-size: 14px;
+                    line-height: 1.4;
+                    margin-bottom: 5px;
+                  }
+                }
+
+                &-text {
+                  font-size: 20px;
+                  font-family: $hiragino;
+                  line-height: 1.5;
+                  @include iphoneLarge{
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

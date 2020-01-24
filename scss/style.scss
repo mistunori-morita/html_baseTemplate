@@ -2,6 +2,7 @@
 @import "mixin";
 @import "_service";
 @import "_news";
+@import "_recruit";
 
 //font
 $hiragino: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', sans-serif;
@@ -1061,7 +1062,7 @@ body {
           &:after {
             content: '';
             position: absolute;
-            right: -8px;
+            right: -7px;
             top: -14px;
             bottom: 0;
             margin: auto;
