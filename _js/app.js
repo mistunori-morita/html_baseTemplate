@@ -96,3 +96,24 @@ $(function() {
     return false;
   });
 });
+
+$(function() {
+  //aboutページ
+  var fadeAdd = function(element, className) {
+    $(element).addClass(className);
+  };
+
+  var fadeItem1 = function() {
+    fadeAdd(".aboutPage__mainvisual-title", "in-visible");
+  };
+  var fadeItem2 = function() {
+    fadeAdd(".aboutPage__mainvisual-text", "in-visible");
+  };
+
+  //要素がないときは実行しない
+  var $taget = $(".aboutPage__mainvisual");
+  if (!$taget.length) return false;
+
+  setTimeout(fadeItem1, 2000);
+  setTimeout(fadeItem2, 3000);
+});

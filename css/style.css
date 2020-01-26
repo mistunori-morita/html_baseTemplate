@@ -1004,6 +1004,448 @@
       .worksSinglePage .works__Link-Button a:hover {
         box-shadow: 0 20px 80px rgba(0, 0, 0, 0.2); }
 
+.aboutPage {
+  margin-top: 100px; }
+  @media screen and (max-width: 414px) {
+    .aboutPage {
+      margin-top: 60px; } }
+  .aboutPage__mainvisual {
+    width: 100%;
+    height: 980px;
+    background: url("../img/about/about_mv_01.svg") no-repeat center center;
+    background-size: cover;
+    padding-top: 245px;
+    margin-bottom: 181px; }
+    @media screen and (max-width: 414px) {
+      .aboutPage__mainvisual {
+        padding-top: 100px;
+        height: 584px;
+        margin-bottom: 42px; } }
+    .aboutPage__mainvisual-title {
+      font-size: 55px;
+      font-weight: bold;
+      font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
+      text-align: center;
+      margin-bottom: 89px;
+      color: #fff;
+      opacity: 0; }
+      @media screen and (max-width: 414px) {
+        .aboutPage__mainvisual-title {
+          font-size: 25px;
+          margin-bottom: 59px; } }
+      .aboutPage__mainvisual-title.in-visible {
+        animation: fadeIn 0.5s ease-out forwards; }
+    .aboutPage__mainvisual-text {
+      font-size: 20px;
+      font-weight: bold;
+      font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
+      text-align: center;
+      color: #fff;
+      line-height: 1.6;
+      margin-bottom: 27px;
+      opacity: 0; }
+      @media screen and (max-width: 414px) {
+        .aboutPage__mainvisual-text {
+          font-size: 14px;
+          font-weight: normal;
+          margin-bottom: 20px; } }
+      .aboutPage__mainvisual-text.in-visible {
+        animation: fadeIn 0.5s ease-out forwards; }
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(50px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+  .aboutPage__intro {
+    margin-bottom: 150px; }
+    @media screen and (max-width: 414px) {
+      .aboutPage__intro {
+        padding: 0 5%;
+        margin-bottom: 77px; } }
+
+@keyframes slideLeftText {
+  0% {
+    opacity: 0;
+    transform: translateX(-160px); }
+  100% {
+    opacity: 0.08;
+    transform: translateX(0); } }
+    .aboutPage__intro .aboutPage__mission {
+      margin-bottom: 193px;
+      position: relative; }
+      @media screen and (max-width: 414px) {
+        .aboutPage__intro .aboutPage__mission {
+          margin-bottom: 103px; } }
+      .aboutPage__intro .aboutPage__mission:before {
+        content: 'Mission';
+        position: absolute;
+        top: 200px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-size: 300px;
+        color: #5576FF;
+        opacity: 0;
+        font-weight: bold;
+        transform: translateX(-160px);
+        text-align: center;
+        animation: slideLeftText 1.3s ease-out forwards; }
+        @media screen and (max-width: 414px) {
+          .aboutPage__intro .aboutPage__mission:before {
+            font-size: 80px;
+            top: 0; } }
+      .aboutPage__intro .aboutPage__mission-title {
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 74px;
+        line-height: 1.7; }
+        @media screen and (max-width: 414px) {
+          .aboutPage__intro .aboutPage__mission-title {
+            font-size: 20px;
+            margin-bottom: 22px; } }
+      .aboutPage__intro .aboutPage__mission-text {
+        font-size: 20px;
+        font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.5;
+        margin-bottom: 38px;
+        opacity: 0;
+        animation: fadeIn 1.7s ease-out forwards; }
+        @media screen and (max-width: 414px) {
+          .aboutPage__intro .aboutPage__mission-text {
+            font-size: 14px;
+            font-weight: normal;
+            margin-bottom: 22px; } }
+    .aboutPage__intro .aboutPage__vision {
+      margin-bottom: 223px;
+      position: relative; }
+      @media screen and (max-width: 414px) {
+        .aboutPage__intro .aboutPage__vision {
+          margin-bottom: 112px; } }
+      .aboutPage__intro .aboutPage__vision:before {
+        content: 'Vision';
+        position: absolute;
+        top: 170px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-size: 300px;
+        color: #5576FF;
+        opacity: 0;
+        font-weight: bold;
+        transform: translateX(-160px);
+        text-align: center;
+        animation: slideLeftText 1.3s ease-out forwards; }
+        @media screen and (max-width: 414px) {
+          .aboutPage__intro .aboutPage__vision:before {
+            font-size: 80px;
+            top: 0; } }
+      .aboutPage__intro .aboutPage__vision-title {
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 91px; }
+        @media screen and (max-width: 414px) {
+          .aboutPage__intro .aboutPage__vision-title {
+            font-size: 20px;
+            margin-bottom: 43px; } }
+      .aboutPage__intro .aboutPage__vision-text {
+        font-size: 20px;
+        font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.5;
+        margin-bottom: 38px;
+        opacity: 0;
+        animation: fadeIn 1.7s ease-out forwards; }
+        @media screen and (max-width: 414px) {
+          .aboutPage__intro .aboutPage__vision-text {
+            font-size: 14px;
+            margin-bottom: 22px;
+            font-weight: normal; } }
+    .aboutPage__intro .aboutPage__value {
+      position: relative; }
+      .aboutPage__intro .aboutPage__value:before {
+        content: 'Value';
+        position: absolute;
+        top: 155px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-size: 300px;
+        color: #5576FF;
+        opacity: 0;
+        font-weight: bold;
+        transform: translateX(-160px);
+        text-align: center;
+        animation: slideLeftText 1.3s ease-out forwards; }
+        @media screen and (max-width: 414px) {
+          .aboutPage__intro .aboutPage__value:before {
+            top: 10px;
+            font-size: 80px; } }
+      .aboutPage__intro .aboutPage__value-title {
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 103px; }
+        @media screen and (max-width: 414px) {
+          .aboutPage__intro .aboutPage__value-title {
+            font-size: 20px;
+            margin-bottom: 39px; } }
+      .aboutPage__intro .aboutPage__value-table {
+        display: flex;
+        justify-content: center; }
+        @media screen and (max-width: 414px) {
+          .aboutPage__intro .aboutPage__value-table {
+            display: block; } }
+        .aboutPage__intro .aboutPage__value-table tr {
+          margin-bottom: 50px;
+          display: block;
+          width: 100%; }
+          @media screen and (max-width: 414px) {
+            .aboutPage__intro .aboutPage__value-table tr {
+              margin-bottom: 20px; } }
+          .aboutPage__intro .aboutPage__value-table tr th {
+            width: 247px;
+            text-align: center;
+            font-size: 26px;
+            font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
+            font-weight: bold;
+            line-height: 1.3;
+            vertical-align: middle; }
+            @media screen and (max-width: 414px) {
+              .aboutPage__intro .aboutPage__value-table tr th {
+                width: 100%;
+                display: block;
+                font-size: 14px;
+                font-weight: bold;
+                vertical-align: inherit;
+                margin-bottom: 8px; } }
+          .aboutPage__intro .aboutPage__value-table tr td {
+            font-size: 20px;
+            font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
+            line-height: 1.6;
+            padding-left: 30px;
+            font-weight: bold;
+            border-left: 1px solid #C4C4C4; }
+            @media screen and (max-width: 414px) {
+              .aboutPage__intro .aboutPage__value-table tr td {
+                padding: 0;
+                font-weight: normal;
+                border: none;
+                font-size: 14px; } }
+  .aboutPage__member {
+    background: #F5F5F5;
+    padding: 100px 0 50px;
+    margin-bottom: 100px; }
+    @media screen and (max-width: 414px) {
+      .aboutPage__member {
+        padding: 47px 0 50px;
+        margin-bottom: 50px; } }
+    .aboutPage__member .inner {
+      max-width: 1290px;
+      width: 90%;
+      margin: 0 auto; }
+      @media screen and (max-width: 414px) {
+        .aboutPage__member .inner {
+          max-width: inherit; } }
+    .aboutPage__member-title {
+      font-size: 50px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 102px; }
+      @media screen and (max-width: 414px) {
+        .aboutPage__member-title {
+          font-size: 20px;
+          margin-bottom: 48px; } }
+    .aboutPage__memberList {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -96px; }
+      @media screen and (max-width: 1519px) {
+        .aboutPage__memberList {
+          margin-left: 0; } }
+      @media screen and (max-width: 414px) {
+        .aboutPage__memberList {
+          margin-left: -2%; } }
+      .aboutPage__memberList a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: #000; }
+        .aboutPage__memberList a .aboutPage__memberList-item-img {
+          transition: all .3s;
+          position: relative; }
+          @media screen and (max-width: 414px) {
+            .aboutPage__memberList a .aboutPage__memberList-item-img {
+              height: 180px; } }
+          @media screen and (max-width: 375px) {
+            .aboutPage__memberList a .aboutPage__memberList-item-img {
+              height: 165px; } }
+          @media screen and (max-width: 320px) {
+            .aboutPage__memberList a .aboutPage__memberList-item-img {
+              height: 141px; } }
+          @media screen and (max-width: 414px) {
+            .aboutPage__memberList a .aboutPage__memberList-item-img img {
+              height: 180px;
+              object-fit: contain;
+              object-position: center; } }
+          @media screen and (max-width: 375px) {
+            .aboutPage__memberList a .aboutPage__memberList-item-img img {
+              height: 165px; } }
+          @media screen and (max-width: 320px) {
+            .aboutPage__memberList a .aboutPage__memberList-item-img img {
+              height: 141px; } }
+          .aboutPage__memberList a .aboutPage__memberList-item-img:hover {
+            opacity: .7;
+            transform: scale(0.9); }
+      .aboutPage__memberList-item {
+        width: 250px;
+        text-align: center;
+        margin-bottom: 49px;
+        margin-left: 96px; }
+        @media screen and (max-width: 1519px) {
+          .aboutPage__memberList-item {
+            margin-left: 35px; } }
+        @media screen and (max-width: 414px) {
+          .aboutPage__memberList-item {
+            width: 48%;
+            margin-left: 2%;
+            margin-bottom: 30px; } }
+        .aboutPage__memberList-item:last-child .aboutPage__memberList-item-img {
+          border: 2px solid #000; }
+          .aboutPage__memberList-item:last-child .aboutPage__memberList-item-img img {
+            width: 41px;
+            object-fit: contain;
+            object-position: center; }
+        .aboutPage__memberList-item-img {
+          height: 250px;
+          margin-bottom: 13px;
+          overflow: hidden; }
+          @media screen and (max-width: 414px) {
+            .aboutPage__memberList-item-img {
+              height: auto;
+              margin-bottom: 10px; } }
+          .aboutPage__memberList-item-img img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover; }
+            @media screen and (max-width: 414px) {
+              .aboutPage__memberList-item-img img {
+                height: auto; } }
+        .aboutPage__memberList-item-job {
+          font-size: 20px;
+          font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
+          margin-bottom: 10px; }
+          @media screen and (max-width: 414px) {
+            .aboutPage__memberList-item-job {
+              font-size: 15px;
+              margin-bottom: 6px; } }
+        .aboutPage__memberList-item-name {
+          font-size: 20px;
+          font-weight: bold;
+          font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
+          margin-bottom: 12px; }
+          @media screen and (max-width: 414px) {
+            .aboutPage__memberList-item-name {
+              font-size: 15px;
+              margin-bottom: 6px; } }
+        .aboutPage__memberList-item-sub {
+          font-size: 20px;
+          font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif; }
+          @media screen and (max-width: 414px) {
+            .aboutPage__memberList-item-sub {
+              font-size: 15px; } }
+  .aboutPage__summary {
+    margin-bottom: 200px; }
+    .aboutPage__summary .inner {
+      max-width: 1290px;
+      width: 90%;
+      margin: 0 auto; }
+    .aboutPage__summary-title {
+      font-size: 50px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 100px; }
+    .aboutPage__summary-table {
+      margin-bottom: 23px; }
+      .aboutPage__summary-table tr {
+        margin-bottom: 28px;
+        display: block;
+        width: 100%; }
+        .aboutPage__summary-table tr th {
+          width: 240px;
+          text-align: left;
+          font-size: 20px;
+          font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
+          font-weight: bold;
+          line-height: 1.3; }
+        .aboutPage__summary-table tr td {
+          font-size: 20px;
+          font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
+          line-height: 1.6;
+          padding-left: 30px;
+          border-left: 1px solid #C4C4C4; }
+    .aboutPage__summary-map {
+      width: 100%;
+      height: 604px;
+      margin-bottom: 50px; }
+    .aboutPage__summary-Button {
+      width: 300px;
+      height: 65px;
+      line-height: 65px;
+      border: 3px solid #000;
+      text-align: center;
+      margin: 0 auto; }
+      .aboutPage__summary-Button a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
+        transition: all .3s;
+        color: #000; }
+        .aboutPage__summary-Button a:hover {
+          box-shadow: 0 20px 80px rgba(0, 0, 0, 0.2); }
+  .aboutPage__history {
+    background: #F5F5F5;
+    padding: 100px 0 88px;
+    margin-bottom: 100px; }
+    .aboutPage__history .inner {
+      max-width: 1290px;
+      width: 90%;
+      margin: 0 auto; }
+    .aboutPage__history-title {
+      font-size: 50px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 87px; }
+    .aboutPage__historyList-item {
+      font-size: 20px;
+      font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
+      line-height: 1.8; }
+  .aboutPage__MainCustomer {
+    margin-bottom: 148px; }
+    .aboutPage__MainCustomer-title {
+      font-size: 50px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 57px; }
+    .aboutPage__MainCustomerList {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1290px;
+      width: 90%;
+      margin: 0 auto; }
+      .aboutPage__MainCustomerList-item {
+        width: 20%;
+        text-align: center;
+        margin-bottom: 25px; }
+
 .recruitPage {
   margin-top: 100px; }
   @media screen and (max-width: 414px) {
