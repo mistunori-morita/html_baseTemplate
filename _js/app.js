@@ -17,6 +17,7 @@ $(function() {
   var count = 0;
   var countup = function() {
     // console.log(count++);
+    count++;
     var id = setTimeout(countup, 1000);
 
     if (count == 8) {
