@@ -1415,6 +1415,9 @@
     background: #F5F5F5;
     padding: 100px 0 88px;
     margin-bottom: 100px; }
+    @media screen and (max-width: 414px) {
+      .aboutPage__history {
+        margin-bottom: 50px; } }
     .aboutPage__history .inner {
       max-width: 1290px;
       width: 90%;
@@ -1430,21 +1433,36 @@
       line-height: 1.8; }
   .aboutPage__MainCustomer {
     margin-bottom: 148px; }
+    @media screen and (max-width: 414px) {
+      .aboutPage__MainCustomer {
+        margin-bottom: 123px; } }
     .aboutPage__MainCustomer-title {
       font-size: 50px;
       font-weight: bold;
       text-align: center;
       margin-bottom: 57px; }
+      @media screen and (max-width: 414px) {
+        .aboutPage__MainCustomer-title {
+          font-size: 20px;
+          margin-bottom: 40px; } }
     .aboutPage__MainCustomerList {
       display: flex;
       flex-wrap: wrap;
       max-width: 1290px;
       width: 90%;
       margin: 0 auto; }
+      @media screen and (max-width: 414px) {
+        .aboutPage__MainCustomerList {
+          max-width: inherit;
+          justify-content: center; } }
       .aboutPage__MainCustomerList-item {
         width: 20%;
         text-align: center;
         margin-bottom: 25px; }
+        @media screen and (max-width: 414px) {
+          .aboutPage__MainCustomerList-item {
+            width: 48%;
+            margin-bottom: 15px; } }
 
 .recruitPage {
   margin-top: 100px; }

@@ -525,6 +525,9 @@ $hiragino: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', sans-serif;
     background: #F5F5F5;
     padding: 100px 0 88px;
     margin-bottom: 100px;
+    @include iphoneLarge{
+      margin-bottom: 50px;
+    }
 
     .inner {
       max-width: 1290px;
@@ -551,12 +554,19 @@ $hiragino: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', sans-serif;
 
   &__MainCustomer {
     margin-bottom: 148px;
+    @include iphoneLarge{
+      margin-bottom: 123px;
+    }
 
     &-title {
       font-size: 50px;
       font-weight: bold;
       text-align: center;
       margin-bottom: 57px;
+      @include iphoneLarge{
+        font-size: 20px;
+        margin-bottom: 40px;
+      }
     }
 
     &List {
@@ -565,11 +575,19 @@ $hiragino: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', sans-serif;
       max-width: 1290px;
       width: 90%;
       margin: 0 auto;
+      @include iphoneLarge{
+        max-width: inherit;
+        justify-content: center;
+      }
 
       &-item {
         width: 20%;
         text-align: center;
         margin-bottom: 25px;
+        @include iphoneLarge{
+          width: 48%;
+          margin-bottom: 15px;
+        }
       }
     }
   }
