@@ -1085,24 +1085,28 @@
       @media screen and (max-width: 414px) {
         .aboutPage__intro .aboutPage__mission {
           margin-bottom: 103px; } }
-      .aboutPage__intro .aboutPage__mission:before {
-        content: 'Mission';
-        position: absolute;
-        top: 200px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        font-size: 300px;
-        color: #5576FF;
-        opacity: 0;
-        font-weight: bold;
-        transform: translateX(-160px);
-        text-align: center;
-        animation: slideLeftText 1.3s ease-out forwards; }
-        @media screen and (max-width: 414px) {
-          .aboutPage__intro .aboutPage__mission:before {
-            font-size: 80px;
-            top: 0; } }
+      .aboutPage__intro .aboutPage__mission.in-visible {
+        position: relative; }
+        .aboutPage__intro .aboutPage__mission.in-visible:before {
+          content: 'Mission';
+          position: absolute;
+          top: 200px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          font-size: 300px;
+          color: #5576FF;
+          opacity: 0;
+          font-weight: bold;
+          transform: translateX(-160px);
+          text-align: center;
+          animation: slideLeftText 1.3s ease-out forwards; }
+          @media screen and (max-width: 414px) {
+            .aboutPage__intro .aboutPage__mission.in-visible:before {
+              font-size: 80px;
+              top: 0; } }
+        .aboutPage__intro .aboutPage__mission.in-visible .aboutPage__mission-text {
+          animation: fadeIn 1.7s ease-out forwards; }
       .aboutPage__intro .aboutPage__mission-title {
         font-size: 50px;
         font-weight: bold;
@@ -1123,8 +1127,7 @@
         text-align: center;
         line-height: 1.5;
         margin-bottom: 38px;
-        opacity: 0;
-        animation: fadeIn 1.7s ease-out forwards; }
+        opacity: 0; }
         @media screen and (max-width: 414px) {
           .aboutPage__intro .aboutPage__mission-text {
             font-size: 14px;
@@ -1136,24 +1139,28 @@
       @media screen and (max-width: 414px) {
         .aboutPage__intro .aboutPage__vision {
           margin-bottom: 112px; } }
-      .aboutPage__intro .aboutPage__vision:before {
-        content: 'Vision';
-        position: absolute;
-        top: 170px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        font-size: 300px;
-        color: #5576FF;
-        opacity: 0;
-        font-weight: bold;
-        transform: translateX(-160px);
-        text-align: center;
-        animation: slideLeftText 1.3s ease-out forwards; }
-        @media screen and (max-width: 414px) {
-          .aboutPage__intro .aboutPage__vision:before {
-            font-size: 80px;
-            top: 0; } }
+      .aboutPage__intro .aboutPage__vision.in-visible {
+        position: relative; }
+        .aboutPage__intro .aboutPage__vision.in-visible:before {
+          content: 'Vision';
+          position: absolute;
+          top: 170px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          font-size: 300px;
+          color: #5576FF;
+          opacity: 0;
+          font-weight: bold;
+          transform: translateX(-160px);
+          text-align: center;
+          animation: slideLeftText 1.3s ease-out forwards; }
+          @media screen and (max-width: 414px) {
+            .aboutPage__intro .aboutPage__vision.in-visible:before {
+              font-size: 80px;
+              top: 0; } }
+        .aboutPage__intro .aboutPage__vision.in-visible .aboutPage__vision-text {
+          animation: fadeIn 1.7s ease-out forwards; }
       .aboutPage__intro .aboutPage__vision-title {
         font-size: 50px;
         font-weight: bold;
@@ -1173,8 +1180,7 @@
         text-align: center;
         line-height: 1.5;
         margin-bottom: 38px;
-        opacity: 0;
-        animation: fadeIn 1.7s ease-out forwards; }
+        opacity: 0; }
         @media screen and (max-width: 414px) {
           .aboutPage__intro .aboutPage__vision-text {
             font-size: 14px;
@@ -1182,24 +1188,28 @@
             font-weight: normal; } }
     .aboutPage__intro .aboutPage__value {
       position: relative; }
-      .aboutPage__intro .aboutPage__value:before {
-        content: 'Value';
-        position: absolute;
-        top: 155px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        font-size: 300px;
-        color: #5576FF;
-        opacity: 0;
-        font-weight: bold;
-        transform: translateX(-160px);
-        text-align: center;
-        animation: slideLeftText 1.3s ease-out forwards; }
-        @media screen and (max-width: 414px) {
-          .aboutPage__intro .aboutPage__value:before {
-            top: 10px;
-            font-size: 80px; } }
+      .aboutPage__intro .aboutPage__value.in-visible {
+        position: relative; }
+        .aboutPage__intro .aboutPage__value.in-visible:before {
+          content: 'Value';
+          position: absolute;
+          top: 155px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          font-size: 300px;
+          color: #5576FF;
+          opacity: 0;
+          font-weight: bold;
+          transform: translateX(-160px);
+          text-align: center;
+          animation: slideLeftText 1.3s ease-out forwards; }
+          @media screen and (max-width: 414px) {
+            .aboutPage__intro .aboutPage__value.in-visible:before {
+              top: 10px;
+              font-size: 80px; } }
+        .aboutPage__intro .aboutPage__value.in-visible .aboutPage__value-table {
+          animation: fadeIn 1.7s ease-out forwards; }
       .aboutPage__intro .aboutPage__value-title {
         font-size: 50px;
         font-weight: bold;
@@ -1214,7 +1224,8 @@
             font-size: 18px; } }
       .aboutPage__intro .aboutPage__value-table {
         display: flex;
-        justify-content: center; }
+        justify-content: center;
+        opacity: 0; }
         @media screen and (max-width: 414px) {
           .aboutPage__intro .aboutPage__value-table {
             display: block; } }
@@ -1745,7 +1756,7 @@
     width: 100%;
     height: 100%;
     margin: auto;
-    z-index: 4;
+    z-index: 5;
     padding: 100px 0;
     overflow: scroll;
     display: none; }

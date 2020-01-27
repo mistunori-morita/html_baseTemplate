@@ -116,6 +116,32 @@ $(function () {
 
   setTimeout(fadeItem1, 2000);
   setTimeout(fadeItem2, 3000);
+
+  //about scroll event
+  $(window).scroll(function() {
+    //target
+    var mission = $('.aboutPage__mission').offset().top;
+    var vision = $('.aboutPage__vision').offset().top;
+    var value = $('.aboutPage__value').offset().top;
+
+    //windowの高さ
+    var wh = $(window).height();
+    //windowスクロール
+    var scroll = $(this).scrollTop();
+
+    if(scroll > mission - wh + 250){
+      fadeAdd(".aboutPage__mission", "in-visible");
+    }
+
+    if(scroll > vision - wh + 150){
+      fadeAdd(".aboutPage__vision", "in-visible");
+    }
+
+    if(scroll > value - wh + 150){
+      fadeAdd(".aboutPage__value", "in-visible");
+    }
+  });
+
 });
 
 $(function () {
