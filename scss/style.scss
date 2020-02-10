@@ -47,10 +47,26 @@ body {
   left: 0;
   right: 0;
   width: 100%;
-  background: #fff;
   height: 100px;
-  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
   z-index: 5;
+
+  &.on{
+    transition: all .2s;
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+
+    //スクロールで文字色変更
+    .navMenu{
+      &__List{
+        &-item{
+          a{
+            color: #000;
+          }
+        }
+      }
+    }
+    
+  }
 
   @include iphoneLarge {
     height: 60px;
@@ -134,7 +150,7 @@ body {
         }
 
         a {
-          color: #000;
+          color: #fff;
           font-size: 20px;
           transition: all 0.3s;
 
@@ -189,10 +205,10 @@ body {
   height: 983px;
   overflow: hidden;
   position: relative;
-  margin: 100px auto 110px;
+  margin: 0 auto 110px;
   @include iphoneLarge {
     height: 584px;
-    margin: 60px auto 56px;
+    margin: 0 auto 56px;
   }
 
   #movie {
