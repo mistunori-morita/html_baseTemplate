@@ -1,28 +1,28 @@
 @charset "UTF-8";
 .servicePage {
-  margin-top: 211px; }
+  margin: 190px auto 150px; }
   @media screen and (max-width: 414px) {
     .servicePage {
-      margin-top: 100px; } }
+      margin: 80px auto 150px; } }
   .servicePage .section__Lead {
-    margin: 0 auto 85px; }
+    margin: 0 auto 208px; }
     @media screen and (max-width: 414px) {
       .servicePage .section__Lead {
         margin: 0 auto 30px;
         padding: 0 5%; } }
     .servicePage .section__Lead-title {
-      font-size: 30px;
+      font-size: 40px;
       text-align: center;
       font-weight: bold;
-      margin-bottom: 92px; }
+      margin-bottom: 107px; }
       @media screen and (max-width: 414px) {
         .servicePage .section__Lead-title {
           font-size: 35px;
           margin-bottom: 45px; } }
     .servicePage .section__Lead-text {
-      font-size: 20px;
+      font-size: 15px;
       line-height: 1.4;
-      font-weight: bold;
+      font-weight: normal;
       font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
       text-align: center; }
       @media screen and (max-width: 414px) {
@@ -34,7 +34,7 @@
     .servicePage {
       margin-bottom: 170px; } }
   .servicePage__List-item {
-    padding: 95px 0 110px;
+    padding: 55px 0 45px;
     margin-bottom: 30px;
     box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.08); }
     @media screen and (max-width: 414px) {
@@ -43,47 +43,46 @@
     .servicePage__List-item .inner {
       display: flex;
       justify-content: center;
-      width: 90%;
+      width: 1080px;
       margin: 0 auto; }
       @media screen and (max-width: 414px) {
         .servicePage__List-item .inner {
           display: block;
           width: 100%; } }
     .servicePage__List-item-img {
-      width: 307px;
-      margin-right: 51px; }
+      width: 270px; }
       @media screen and (max-width: 414px) {
         .servicePage__List-item-img {
           width: 200px;
           margin: 0 auto 25px; } }
       .servicePage__List-item-img img {
         width: 100%;
-        height: 305px;
+        height: 270px;
         object-position: center;
         object-fit: contain; }
         @media screen and (max-width: 414px) {
           .servicePage__List-item-img img {
             height: auto; } }
     .servicePage__List-item-contents {
-      width: 1130px; }
+      width: 810px; }
       @media screen and (max-width: 414px) {
         .servicePage__List-item-contents {
           width: 100%; } }
     .servicePage__List-item-title {
-      font-size: 30px;
+      font-size: 25px;
       font-weight: bold;
-      margin-bottom: 44px;
+      margin-bottom: 28px;
       font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif; }
       @media screen and (max-width: 414px) {
         .servicePage__List-item-title {
           font-size: 20px;
-          color: #5576FF;
+          color: #5576ff;
           text-align: center;
           margin-bottom: 27px; } }
     .servicePage__List-item-text {
-      font-size: 20px;
+      font-size: 16px;
       line-height: 1.4;
-      margin-bottom: 31px;
+      margin-bottom: 26px;
       font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif; }
       @media screen and (max-width: 414px) {
         .servicePage__List-item-text {
@@ -94,19 +93,19 @@
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-      margin-left: -1%; }
+      margin-left: -5px; }
       @media screen and (max-width: 414px) {
         .servicePage__List-item-tagList {
           margin-left: 0;
           display: block; } }
       .servicePage__List-item-tagList-item {
-        width: 350px;
-        margin-left: 1%;
-        background: #F5F5F5;
-        font-size: 18px;
+        width: 265px;
+        margin-left: 5px;
+        background: #f5f5f5;
+        font-size: 14px;
         text-align: center;
-        margin-bottom: 10px;
-        padding: 16px 2px; }
+        margin-bottom: 5px;
+        padding: 18px 3px; }
         @media screen and (max-width: 414px) {
           .servicePage__List-item-tagList-item {
             width: 100%;
