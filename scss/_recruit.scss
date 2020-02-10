@@ -16,8 +16,8 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
 
     @include iphoneLarge {
       height: 540px;
-      margin-bottom: 97px;
-      padding-top: 187px;
+      margin-bottom: 57px;
+      padding-top: 190px;
     }
 
     &-title {
@@ -30,7 +30,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
 
       @include iphoneLarge {
         font-size: 20px;
-        margin-bottom: 60px;
+        margin-bottom: 66px;
       }
     }
 
@@ -55,7 +55,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
 
       @include iphoneLarge {
         width: 90%;
-        margin: 0 auto 43px;
+        margin: 0 auto 45px;
       }
 
       &-title {
@@ -65,8 +65,8 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
         margin-bottom: 107px;
 
         @include iphoneLarge {
-          font-size: 20px;
-          margin-bottom: 25px;
+          font-size: 35px;
+          margin-bottom: 48px;
         }
       }
 
@@ -79,7 +79,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
 
         @include iphoneLarge {
           font-size: 14px;
-          margin-bottom: 16px;
+          margin-bottom: 20px;
           line-height: 1.6;
         }
 
@@ -108,7 +108,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
       @include iphoneLarge {
         display: block;
         width: 90%;
-        margin: 0 auto 100px;
+        margin: 0 auto 63px;
       }
 
       &-img {
@@ -131,7 +131,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
 
         @include iphoneLarge {
           font-size: 20px;
-          margin-bottom: 28px;
+          margin-bottom: 54px;
         }
       }
 
@@ -363,8 +363,8 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
         margin: 0 auto 90px;
         @include iphoneLarge {
           width: 80%;
-          height: 50px;
-          line-height: 50px;
+          height: 70px;
+          line-height: 70px;
           margin-bottom: 50px;
         }
 
@@ -377,6 +377,9 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
           font-family: $hiragino;
           color: #000;
           transition: all 0.3s;
+          @include iphoneLarge {
+            font-size: 15px;
+          }
 
           &:hover {
             opacity: 0.5;
@@ -409,7 +412,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
       background: #f5f5f5;
       padding: 100px 0 200px;
       @include iphoneLarge {
-        padding: 50px 0 150px;
+        padding: 66px 0 150px;
       }
 
       &-title {
@@ -419,7 +422,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
         margin-bottom: 97px;
         @include iphoneLarge {
           font-size: 20px;
-          margin-bottom: 47px;
+          margin-bottom: 57px;
         }
       }
 
@@ -428,7 +431,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
         margin: 0 auto 80px;
         @include iphoneLarge {
           width: 90%;
-          margin: 0 auto 43px;
+          margin: 0 auto 50px;
         }
 
         &-title {
@@ -438,7 +441,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
           text-align: center;
           @include iphoneLarge {
             font-size: 14px;
-            margin-bottom: 20px;
+            margin-bottom: 13px;
           }
         }
 
@@ -488,7 +491,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
     .recruit__employment {
       margin-bottom: 100px;
       @include iphoneLarge {
-        margin-bottom: 47px;
+        margin-bottom: 50px;
       }
 
       &-title {
@@ -498,7 +501,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
         text-align: center;
         @include iphoneLarge {
           font-size: 14px;
-          margin-bottom: 17px;
+          margin-bottom: 20px;
         }
       }
 
@@ -569,6 +572,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
 
               @include iphoneLarge {
                 width: 100%;
+                padding-left: 0;
               }
 
               &-list {
