@@ -26,14 +26,12 @@ $hiragino: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', sans-serif;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 1520px;
   width: 90%;
   margin: 0 auto 50px;
   border-bottom: 1px solid #C4C4C4;
 
   @include iphoneLarge {
     width: 100%;
-    max-width: inherit;
     margin-bottom: 20px;
   }
 
@@ -128,15 +126,6 @@ $hiragino: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', sans-serif;
       position: relative;
       width: 50%;
 
-      @include pcWide {
-        height: 480px;
-        img {
-          height: 480px;
-          object-fit: cover;
-          object-position: center;
-        }
-      }
-
       @include iphoneLarge {
         width: 100%;
         height: auto;
@@ -172,10 +161,6 @@ $hiragino: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', sans-serif;
     &-info {
       width: 50%;
       padding: 95px 5% 0;
-      @include pcWide {
-        padding: 45px 4% 0;
-      }
-
       @include iphoneLarge {
         width: 100%;
         padding: 0 5%;
@@ -280,11 +265,9 @@ $hiragino: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', sans-serif;
   //共通コンポーネント
   .works__contents {
     width: 90%;
-    max-width: 1520px;
     margin: 0 auto 71px;
     @include iphoneLarge {
       width: 100%;
-      max-width: inherit;
       margin: 0 auto 50px;
     }
 
@@ -340,10 +323,6 @@ $hiragino: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', sans-serif;
           position: relative;
           text-align: center;
 
-          @include pcWide {
-            height: 340px;
-            overflow: hidden;
-          }
 
           @include iphoneLarge {
             max-height: inherit;
@@ -357,9 +336,6 @@ $hiragino: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', sans-serif;
             object-fit: contain;
             object-position: center;
 
-            @include pcWide {
-              height: 340px;
-            }
             @include iphoneLarge {
               height: auto;
             }
@@ -582,9 +558,7 @@ $hiragino: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', sans-serif;
           }
 
           span {
-            @include pcWide {
-              display: inline-block;
-            }
+
             @include iphoneLarge {
               display: inline;
             }
@@ -702,7 +676,6 @@ $hiragino: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', sans-serif;
       flex-wrap: wrap;
       justify-content: space-between;
       width: 90%;
-      max-width: 1520px;
       margin: 0 auto 90px;
 
       @include iphoneLarge {
@@ -752,10 +725,6 @@ $hiragino: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', sans-serif;
           position: relative;
           text-align: center;
 
-          @include pcWide {
-            height: 340px;
-            overflow: hidden;
-          }
 
           @include iphoneLarge {
             max-height: inherit;
@@ -769,9 +738,6 @@ $hiragino: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', sans-serif;
             object-fit: contain;
             object-position: center;
 
-            @include pcWide {
-              height: 340px;
-            }
             @include iphoneLarge {
               height: auto;
             }

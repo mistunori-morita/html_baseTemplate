@@ -363,9 +363,7 @@ $hiragino: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', sans-serif;
       display: flex;
       flex-wrap: wrap;
       margin-left: -96px;
-      @include pcWide {
-        margin-left: 0;
-      }
+
       @include iphoneLarge {
         margin-left: -2%;
       }
@@ -418,9 +416,7 @@ $hiragino: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', sans-serif;
         text-align: center;
         margin-bottom: 49px;
         margin-left: 96px;
-        @include pcWide {
-          margin-left: 35px;
-        }
+
         @include iphoneLarge {
           width: 48%;
           margin-left: 2%;
