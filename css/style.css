@@ -2009,7 +2009,7 @@
     @media screen and (max-width: 414px) {
       .formPage-title {
         font-size: 35px;
-        margin-bottom: 47px; } }
+        margin-bottom: 50px; } }
   .formPage .form__Contents .fromGroup {
     width: 501px;
     margin: 0 auto 30px; }
@@ -2028,7 +2028,7 @@
         @media screen and (max-width: 414px) {
           .formPage .form__Contents .fromGroup-item label {
             font-size: 14px;
-            margin-bottom: 5px; } }
+            margin-bottom: 6px; } }
         .formPage .form__Contents .fromGroup-item label span {
           font-weight: normal; }
       .formPage .form__Contents .fromGroup-item-input {
@@ -2107,7 +2107,9 @@
       .formPage .form__Contents .form-check-Button {
         width: 200px;
         font-size: 15px;
-        border: 2px solid #000; } }
+        border: 2px solid #000;
+        height: 55px;
+        line-height: 55px; } }
     .formPage .form__Contents .form-check-Button:hover {
       opacity: 0.6;
       cursor: pointer; }
@@ -2125,7 +2127,7 @@
         font-size: 14px;
         line-height: 1.6;
         text-align: left;
-        margin-bottom: 23px; } }
+        margin-bottom: 7px; } }
   .formPage .form__Contents .privacy-modal-Button {
     width: 300px;
     height: 50px;
@@ -2140,8 +2142,7 @@
         width: 85%;
         height: 50px;
         line-height: 50px;
-        font-size: 14px;
-        margin: 0 auto 20px; } }
+        font-size: 14px; } }
     .formPage .form__Contents .privacy-modal-Button:hover {
       cursor: pointer;
       opacity: 0.6; }
@@ -2180,18 +2181,18 @@
       @media screen and (max-width: 414px) {
         .formPage .form__Contents .privacy-modal-contents-title {
           font-size: 20px;
-          margin-bottom: 35px; } }
+          margin-bottom: 45px; } }
   .formPage .form__Contents .privacy-modal-table {
     margin-bottom: 61px; }
     @media screen and (max-width: 414px) {
       .formPage .form__Contents .privacy-modal-table {
-        margin-bottom: 76px; } }
+        margin-bottom: 71px; } }
     .formPage .form__Contents .privacy-modal-table tr {
       margin-bottom: 33px;
       display: block; }
       @media screen and (max-width: 414px) {
         .formPage .form__Contents .privacy-modal-table tr {
-          margin-bottom: 19px; } }
+          margin-bottom: 25px; } }
       .formPage .form__Contents .privacy-modal-table tr th {
         font-size: 16px;
         font-weight: bold;
