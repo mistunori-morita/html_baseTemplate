@@ -2347,6 +2347,9 @@ body {
   .header .navSp__Button {
     display: none; }
     @media screen and (max-width: 414px) {
+      .header .navSp__Button.btn-white {
+        background: url("../img/header/icon_nav_01_w.svg") no-repeat; } }
+    @media screen and (max-width: 414px) {
       .header .navSp__Button {
         display: block;
         position: absolute;
@@ -2380,7 +2383,7 @@ body {
   margin: 0 auto 110px; }
   @media screen and (max-width: 414px) {
     .mainVisual {
-      height: 584px;
+      height: 644px;
       margin: 0 auto 56px; } }
   .mainVisual #movie {
     position: absolute;

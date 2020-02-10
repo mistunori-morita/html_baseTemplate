@@ -20,16 +20,21 @@ $(function() {
   //headerスクロールメニュー
   var $header = $(".header__scroll");
   var $header_logo = $(".header__logo img");
+  var $navSp_button = $(".navSp__Button");
 
   if (!$header.length) return false;
+
+  $navSp_button.addClass("btn-white");
 
   $(window).scroll(function() {
     if ($(this).scrollTop() > 800) {
       $header.addClass("on");
       $header_logo.attr("src", "img/header/header_logo_02.svg");
+      $navSp_button.removeClass("btn-white");
     } else {
       $header.removeClass("on");
       $header_logo.attr("src", "img/header/header_logo_01.svg");
+      $navSp_button.addClass("btn-white");
     }
   });
 });

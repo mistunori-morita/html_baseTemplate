@@ -183,6 +183,14 @@ body {
   //sp button navmenu
   .navSp__Button {
     display: none;
+
+    &.btn-white {
+      @include iphoneLarge {
+        background: url("../img/header/icon_nav_01_w.svg") no-repeat;
+      }
+    }
+
+    // 通常
     @include iphoneLarge {
       display: block;
       position: absolute;
@@ -225,7 +233,7 @@ body {
   position: relative;
   margin: 0 auto 110px;
   @include iphoneLarge {
-    height: 584px;
+    height: 644px;
     margin: 0 auto 56px;
   }
 
