@@ -1,44 +1,48 @@
 // 読み込み時
-$(function () {
-  var fadeAdd = function (element, className) {
+$(function() {
+  var fadeAdd = function(element, className) {
     $(element).addClass(className);
   };
 
-  var fadeItem1 = function () {
+  var fadeItem1 = function() {
     fadeAdd(".mainVisual__Lead-title", "in-visible");
   };
-  var fadeItem2 = function () {
+  var fadeItem2 = function() {
     fadeAdd(".mainVisual__Lead-sub", "in-visible");
   };
-  window.onload = function () {
+  window.onload = function() {
     setTimeout(fadeItem1, 2000);
     setTimeout(fadeItem2, 3000);
   };
 });
 
-$(function(){
+$(function() {
   //headerスクロールメニュー
-  var $header = $(".header");
+  var $header = $(".header__scroll");
+  var $header_logo = $(".header__logo img");
+
   if (!$header.length) return false;
 
-  $(window).scroll(function () {
+  $(window).scroll(function() {
     if ($(this).scrollTop() > 800) {
-      $header.addClass('on');
+      $header.addClass("on");
+      $header_logo.attr("src", "img/header/header_logo_02.svg");
     } else {
-      $header.removeClass('on');
+      $header.removeClass("on");
+      $header_logo.attr("src", "img/header/header_logo_01.svg");
     }
   });
 });
 
-$(function () {
+$(function() {
   //リクルートモーダル　職種募集部分
-  $(".recruit__recruitingList-item").on("click", function () {
+  $(".recruit__recruitingList-item").on("click", function() {
     var index = $(this).index() + 1;
     $(".recruit__modalList").fadeIn();
     $(".recruit__modalList li:nth-child(" + index + ")").fadeToggle(200);
   });
 
-  $(".recruit__modalList-Close").on("click", function () {
+  $(".recruit__modalList-Close").on("click", function() {
     $(".recruit__modalList li").hide();
     $(this)
       .parents()
@@ -47,9 +51,9 @@ $(function () {
   });
 });
 
-$(function () {
+$(function() {
   //footer
-  $(".footer__menuBox-title").on("click", function () {
+  $(".footer__menuBox-title").on("click", function() {
     $(this)
       .next()
       .slideToggle();
@@ -57,7 +61,7 @@ $(function () {
   });
 
   //sp nav menu
-  $(".navSp__Button").on("click", function () {
+  $(".navSp__Button").on("click", function() {
     $(this).toggleClass("on");
     $(this)
       .prev()
@@ -68,7 +72,7 @@ $(function () {
   if (!$pageTop.length) return false;
 
   $pageTop.hide();
-  $(window).scroll(function () {
+  $(window).scroll(function() {
     if ($(this).scrollTop() > 1500) {
       $pageTop.fadeIn();
     } else {
@@ -76,7 +80,7 @@ $(function () {
     }
   });
 
-  $('a[href^="#"]').click(function () {
+  $('a[href^="#"]').click(function() {
     var href = $(this).attr("href");
     var target = $(href == "#" || href == "" ? "html" : href);
     var position = target.offset().top;
@@ -91,16 +95,16 @@ $(function () {
   });
 });
 
-$(function () {
+$(function() {
   //aboutページ
-  var fadeAdd = function (element, className) {
+  var fadeAdd = function(element, className) {
     $(element).addClass(className);
   };
 
-  var fadeItem1 = function () {
+  var fadeItem1 = function() {
     fadeAdd(".aboutPage__mainvisual-title", "in-visible");
   };
-  var fadeItem2 = function () {
+  var fadeItem2 = function() {
     fadeAdd(".aboutPage__mainvisual-text", "in-visible");
   };
 
@@ -114,37 +118,36 @@ $(function () {
   //about scroll event
   $(window).scroll(function() {
     //target
-    var mission = $('.aboutPage__mission').offset().top;
-    var vision = $('.aboutPage__vision').offset().top;
-    var value = $('.aboutPage__value').offset().top;
+    var mission = $(".aboutPage__mission").offset().top;
+    var vision = $(".aboutPage__vision").offset().top;
+    var value = $(".aboutPage__value").offset().top;
 
     //windowの高さ
     var wh = $(window).height();
     //windowスクロール
     var scroll = $(this).scrollTop();
 
-    if(scroll > mission - wh + 250){
+    if (scroll > mission - wh + 250) {
       fadeAdd(".aboutPage__mission", "in-visible");
     }
 
-    if(scroll > vision - wh + 150){
+    if (scroll > vision - wh + 150) {
       fadeAdd(".aboutPage__vision", "in-visible");
     }
 
-    if(scroll > value - wh + 150){
+    if (scroll > value - wh + 150) {
       fadeAdd(".aboutPage__value", "in-visible");
     }
   });
-
 });
 
-$(function () {
+$(function() {
   //  form modal
-  $(".privacy-modal-Button").on("click", function () {
+  $(".privacy-modal-Button").on("click", function() {
     $(".privacy-modal-contents").fadeIn();
   });
 
-  $(".privacy-modal-close-Button").on("click", function () {
+  $(".privacy-modal-close-Button").on("click", function() {
     $(".privacy-modal-contents").fadeOut();
   });
 });
