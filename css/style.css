@@ -3,12 +3,12 @@
   margin: 190px auto 150px; }
   @media screen and (max-width: 414px) {
     .servicePage {
-      margin: 80px auto 150px; } }
+      margin: 140px auto 150px; } }
   .servicePage .section__Lead {
     margin: 0 auto 208px; }
     @media screen and (max-width: 414px) {
       .servicePage .section__Lead {
-        margin: 0 auto 30px;
+        margin: 0 auto 25px;
         padding: 0 5%; } }
     .servicePage .section__Lead-title {
       font-size: 40px;
@@ -18,7 +18,7 @@
       @media screen and (max-width: 414px) {
         .servicePage .section__Lead-title {
           font-size: 35px;
-          margin-bottom: 45px; } }
+          margin-bottom: 48px; } }
     .servicePage .section__Lead-text {
       font-size: 15px;
       line-height: 1.4;
@@ -30,16 +30,13 @@
           font-size: 14px;
           text-align: left;
           line-height: 1.5; } }
-  @media screen and (max-width: 414px) {
-    .servicePage {
-      margin-bottom: 170px; } }
   .servicePage__List-item {
     padding: 55px 0 45px;
     margin-bottom: 30px;
     box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.08); }
     @media screen and (max-width: 414px) {
       .servicePage__List-item {
-        padding: 30px 5% 20px; } }
+        padding: 30px 5% 24px; } }
     .servicePage__List-item .inner {
       display: flex;
       justify-content: center;
@@ -54,7 +51,7 @@
       @media screen and (max-width: 414px) {
         .servicePage__List-item-img {
           width: 200px;
-          margin: 0 auto 25px; } }
+          margin: 0 auto 20px; } }
       .servicePage__List-item-img img {
         width: 100%;
         height: 270px;
@@ -88,7 +85,7 @@
         .servicePage__List-item-text {
           font-size: 14px;
           line-height: 1.5;
-          margin-bottom: 35px; } }
+          margin-bottom: 40px; } }
     .servicePage__List-item-tagList {
       display: flex;
       align-items: center;
@@ -111,7 +108,8 @@
             width: 100%;
             font-size: 14px;
             padding: 8px 0;
-            margin-left: 0; } }
+            margin-left: 0;
+            margin-bottom: 10px; } }
 
 .section__Lead {
   margin-top: 211px;
