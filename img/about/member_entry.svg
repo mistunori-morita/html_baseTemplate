@@ -1,4 +1,14 @@
-<svg id="グループ_128" data-name="グループ 128" xmlns="http://www.w3.org/2000/svg" width="41" height="38" viewBox="0 0 41 38">
-  <line id="線_15" data-name="線 15" x2="41" transform="translate(0 18)" fill="none" stroke="#000" stroke-width="3"/>
-  <line id="線_16" data-name="線 16" y2="38" transform="translate(21)" fill="none" stroke="#000" stroke-width="3"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <g id="グループ_2929" data-name="グループ 2929" transform="translate(-393 -3326)">
+    <g id="グループ_1410" data-name="グループ 1410" transform="translate(393 3326)">
+      <g id="長方形_259" data-name="長方形 259" fill="none" stroke="#000" stroke-width="3">
+        <rect width="200" height="200" stroke="none"/>
+        <rect x="1.5" y="1.5" width="197" height="197" fill="none"/>
+      </g>
+      <g id="グループ_128" data-name="グループ 128" transform="translate(84.067 85.699)">
+        <line id="線_15" data-name="線 15" x2="32.8" transform="translate(0 14.4)" fill="none" stroke="#000" stroke-width="3"/>
+        <line id="線_16" data-name="線 16" y2="30.4" transform="translate(16.8)" fill="none" stroke="#000" stroke-width="3"/>
+      </g>
+    </g>
+  </g>
 </svg>
