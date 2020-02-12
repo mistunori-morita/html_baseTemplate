@@ -25,9 +25,8 @@ body {
 }
 
 #wrap {
-  @include pcWide {
-    width: 100%;
-  }
+  // topへ戻る
+  overflow: auto;
 
   @include ipad {
     width: 1200px;

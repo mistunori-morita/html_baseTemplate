@@ -2231,19 +2231,16 @@ img {
 body {
   font-family: "Lato", sans-serif; }
 
-@media screen and (max-width: 1519px) {
-  #wrap {
-    width: 100%; } }
-
-@media screen and (max-width: 1024px) {
-  #wrap {
-    width: 1200px;
-    margin: 0 auto;
-    overflow: hidden; } }
-
-@media screen and (max-width: 414px) {
-  #wrap {
-    width: 100%; } }
+#wrap {
+  overflow: auto; }
+  @media screen and (max-width: 1024px) {
+    #wrap {
+      width: 1200px;
+      margin: 0 auto;
+      overflow: hidden; } }
+  @media screen and (max-width: 414px) {
+    #wrap {
+      width: 100%; } }
 
 .header {
   position: fixed;
