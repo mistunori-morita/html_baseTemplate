@@ -140,7 +140,6 @@
     @media screen and (max-width: 414px) {
       .newsPage .section__menuList {
         width: 100%;
-        max-width: inherit;
         margin-bottom: 17px; } }
     .newsPage .section__menuList-item {
       width: 240px;
@@ -229,12 +228,11 @@
       .newsSinglePage .news__article {
         padding-bottom: 68px; } }
     .newsSinglePage .news__article .inner {
-      max-width: 1290px;
-      margin: 0 auto;
-      width: 90%; }
+      width: 1080px;
+      margin: 0 auto; }
       @media screen and (max-width: 414px) {
         .newsSinglePage .news__article .inner {
-          max-width: inherit; } }
+          width: 90%; } }
     .newsSinglePage .news__articleNotes {
       display: flex;
       margin-bottom: 100px; }
@@ -972,28 +970,27 @@
         box-shadow: 0 20px 80px rgba(0, 0, 0, 0.2); }
 
 .aboutPage {
-  margin-top: 100px; }
+  margin-top: 80px; }
   @media screen and (max-width: 414px) {
     .aboutPage {
       margin-top: 60px; } }
   .aboutPage__mainvisual {
     width: 100%;
-    height: 980px;
+    height: 653px;
     background: url("../img/about/about_mv_01.svg") no-repeat center center;
     background-size: cover;
-    padding-top: 245px;
-    margin-bottom: 181px; }
+    padding-top: 105px;
+    margin-bottom: 97px; }
     @media screen and (max-width: 414px) {
       .aboutPage__mainvisual {
         height: 584px;
         margin-bottom: 42px;
         padding: 100px 5% 0; } }
     .aboutPage__mainvisual-title {
-      font-size: 55px;
+      font-size: 40px;
       font-weight: bold;
-      font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
       text-align: center;
-      margin-bottom: 89px;
+      margin-bottom: 53px;
       color: #fff;
       opacity: 0; }
       @media screen and (max-width: 414px) {
@@ -1004,15 +1001,15 @@
         .aboutPage__mainvisual-title {
           font-size: 22px; } }
       .aboutPage__mainvisual-title.in-visible {
-        animation: fadeIn 0.5s ease-out forwards; }
+        animation: fadeIn 0.8s ease-out forwards; }
     .aboutPage__mainvisual-text {
-      font-size: 20px;
-      font-weight: bold;
+      font-size: 16px;
+      font-weight: normal;
       font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
       text-align: center;
       color: #fff;
       line-height: 1.6;
-      margin-bottom: 27px;
+      margin-bottom: 31px;
       opacity: 0; }
       @media screen and (max-width: 414px) {
         .aboutPage__mainvisual-text {
@@ -1023,7 +1020,7 @@
         .aboutPage__mainvisual-text {
           font-size: 13px; } }
       .aboutPage__mainvisual-text.in-visible {
-        animation: fadeIn 0.5s ease-out forwards; }
+        animation: fadeIn 0.8s ease-out forwards; }
 
 @keyframes fadeIn {
   0% {
@@ -1033,7 +1030,7 @@
     transform: translateY(0);
     opacity: 1; } }
   .aboutPage__intro {
-    margin-bottom: 150px; }
+    margin-bottom: 89px; }
     @media screen and (max-width: 414px) {
       .aboutPage__intro {
         padding: 0 5%;
@@ -1047,7 +1044,7 @@
     opacity: 0.08;
     transform: translateX(0); } }
     .aboutPage__intro .aboutPage__mission {
-      margin-bottom: 193px;
+      margin-bottom: 187px;
       position: relative; }
       @media screen and (max-width: 414px) {
         .aboutPage__intro .aboutPage__mission {
@@ -1055,14 +1052,14 @@
       .aboutPage__intro .aboutPage__mission.in-visible {
         position: relative; }
         .aboutPage__intro .aboutPage__mission.in-visible:before {
-          content: 'Mission';
+          content: "Mission";
           position: absolute;
-          top: 200px;
+          top: 47px;
           left: 0;
           right: 0;
           margin: auto;
           font-size: 300px;
-          color: #5576FF;
+          color: #5576ff;
           opacity: 0;
           font-weight: bold;
           transform: translateX(-160px);
@@ -1075,11 +1072,11 @@
         .aboutPage__intro .aboutPage__mission.in-visible .aboutPage__mission-text {
           animation: fadeIn 1.7s ease-out forwards; }
       .aboutPage__intro .aboutPage__mission-title {
-        font-size: 50px;
+        font-size: 40px;
         font-weight: bold;
         text-align: center;
-        margin-bottom: 74px;
-        line-height: 1.7; }
+        margin-bottom: 82px;
+        line-height: 1.5; }
         @media screen and (max-width: 414px) {
           .aboutPage__intro .aboutPage__mission-title {
             font-size: 20px;
@@ -1088,12 +1085,11 @@
           .aboutPage__intro .aboutPage__mission-title {
             font-size: 18px; } }
       .aboutPage__intro .aboutPage__mission-text {
-        font-size: 20px;
+        font-size: 16px;
         font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
-        font-weight: bold;
         text-align: center;
-        line-height: 1.5;
-        margin-bottom: 38px;
+        line-height: 1.6;
+        margin-bottom: 24px;
         opacity: 0; }
         @media screen and (max-width: 414px) {
           .aboutPage__intro .aboutPage__mission-text {
@@ -1101,7 +1097,7 @@
             font-weight: normal;
             margin-bottom: 22px; } }
     .aboutPage__intro .aboutPage__vision {
-      margin-bottom: 223px;
+      margin-bottom: 163px;
       position: relative; }
       @media screen and (max-width: 414px) {
         .aboutPage__intro .aboutPage__vision {
@@ -1109,14 +1105,14 @@
       .aboutPage__intro .aboutPage__vision.in-visible {
         position: relative; }
         .aboutPage__intro .aboutPage__vision.in-visible:before {
-          content: 'Vision';
+          content: "Vision";
           position: absolute;
-          top: 170px;
+          top: 25px;
           left: 0;
           right: 0;
           margin: auto;
           font-size: 300px;
-          color: #5576FF;
+          color: #5576ff;
           opacity: 0;
           font-weight: bold;
           transform: translateX(-160px);
@@ -1129,10 +1125,10 @@
         .aboutPage__intro .aboutPage__vision.in-visible .aboutPage__vision-text {
           animation: fadeIn 1.7s ease-out forwards; }
       .aboutPage__intro .aboutPage__vision-title {
-        font-size: 50px;
+        font-size: 40px;
         font-weight: bold;
         text-align: center;
-        margin-bottom: 91px; }
+        margin-bottom: 30px; }
         @media screen and (max-width: 414px) {
           .aboutPage__intro .aboutPage__vision-title {
             font-size: 20px;
@@ -1141,12 +1137,11 @@
           .aboutPage__intro .aboutPage__vision-title {
             font-size: 18px; } }
       .aboutPage__intro .aboutPage__vision-text {
-        font-size: 20px;
+        font-size: 16px;
         font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
-        font-weight: bold;
         text-align: center;
         line-height: 1.5;
-        margin-bottom: 38px;
+        margin-bottom: 35px;
         opacity: 0; }
         @media screen and (max-width: 414px) {
           .aboutPage__intro .aboutPage__vision-text {
@@ -1158,14 +1153,14 @@
       .aboutPage__intro .aboutPage__value.in-visible {
         position: relative; }
         .aboutPage__intro .aboutPage__value.in-visible:before {
-          content: 'Value';
+          content: "Value";
           position: absolute;
-          top: 155px;
+          top: 25px;
           left: 0;
           right: 0;
           margin: auto;
           font-size: 300px;
-          color: #5576FF;
+          color: #5576ff;
           opacity: 0;
           font-weight: bold;
           transform: translateX(-160px);
@@ -1181,7 +1176,7 @@
         font-size: 50px;
         font-weight: bold;
         text-align: center;
-        margin-bottom: 103px; }
+        margin-bottom: 45px; }
         @media screen and (max-width: 414px) {
           .aboutPage__intro .aboutPage__value-title {
             font-size: 20px;
@@ -1204,12 +1199,13 @@
             .aboutPage__intro .aboutPage__value-table tr {
               margin-bottom: 20px; } }
           .aboutPage__intro .aboutPage__value-table tr th {
-            width: 247px;
+            width: 200px;
             text-align: center;
-            font-size: 26px;
+            font-size: 20px;
             font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
             font-weight: bold;
             line-height: 1.3;
+            padding-right: 40px;
             vertical-align: middle; }
             @media screen and (max-width: 414px) {
               .aboutPage__intro .aboutPage__value-table tr th {
@@ -1223,9 +1219,8 @@
             font-size: 20px;
             font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
             line-height: 1.6;
-            padding-left: 30px;
-            font-weight: bold;
-            border-left: 1px solid #C4C4C4; }
+            padding-left: 40px;
+            border-left: 1px solid #c4c4c4; }
             @media screen and (max-width: 414px) {
               .aboutPage__intro .aboutPage__value-table tr td {
                 padding: 0;
@@ -1233,25 +1228,24 @@
                 border: none;
                 font-size: 14px; } }
   .aboutPage__member {
-    background: #F5F5F5;
-    padding: 100px 0 50px;
+    background: #f5f5f5;
+    padding: 105px 0 100px;
     margin-bottom: 100px; }
     @media screen and (max-width: 414px) {
       .aboutPage__member {
         padding: 47px 0 50px;
         margin-bottom: 50px; } }
     .aboutPage__member .inner {
-      max-width: 1290px;
-      width: 90%;
+      width: 1080px;
       margin: 0 auto; }
       @media screen and (max-width: 414px) {
         .aboutPage__member .inner {
-          max-width: inherit; } }
+          width: 90%; } }
     .aboutPage__member-title {
-      font-size: 50px;
+      font-size: 40px;
       font-weight: bold;
       text-align: center;
-      margin-bottom: 102px; }
+      margin-bottom: 90px; }
       @media screen and (max-width: 414px) {
         .aboutPage__member-title {
           font-size: 20px;
@@ -1259,7 +1253,7 @@
     .aboutPage__memberList {
       display: flex;
       flex-wrap: wrap;
-      margin-left: -96px; }
+      margin-left: -93px; }
       @media screen and (max-width: 414px) {
         .aboutPage__memberList {
           margin-left: -2%; } }
@@ -1269,7 +1263,7 @@
         height: 100%;
         color: #000; }
         .aboutPage__memberList a .aboutPage__memberList-item-img {
-          transition: all .3s;
+          transition: all 0.3s;
           position: relative; }
           @media screen and (max-width: 414px) {
             .aboutPage__memberList a .aboutPage__memberList-item-img {
@@ -1292,76 +1286,74 @@
             .aboutPage__memberList a .aboutPage__memberList-item-img img {
               height: 141px; } }
           .aboutPage__memberList a .aboutPage__memberList-item-img:hover {
-            opacity: .7;
+            opacity: 0.7;
             transform: scale(0.9); }
       .aboutPage__memberList-item {
-        width: 250px;
+        width: 200px;
         text-align: center;
         margin-bottom: 49px;
-        margin-left: 96px; }
+        margin-left: 93px; }
         @media screen and (max-width: 414px) {
           .aboutPage__memberList-item {
             width: 48%;
             margin-left: 2%;
             margin-bottom: 30px; } }
         .aboutPage__memberList-item:last-child .aboutPage__memberList-item-img {
-          border: 2px solid #000; }
+          border: 2px solid #000;
+          position: relative; }
           .aboutPage__memberList-item:last-child .aboutPage__memberList-item-img img {
             width: 41px;
-            object-fit: contain;
-            object-position: center; }
+            height: 41px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto; }
         .aboutPage__memberList-item-img {
-          height: 250px;
-          margin-bottom: 13px;
+          height: 200px;
+          margin-bottom: 10px;
           overflow: hidden; }
           @media screen and (max-width: 414px) {
             .aboutPage__memberList-item-img {
               height: auto;
               margin-bottom: 10px; } }
-          .aboutPage__memberList-item-img img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover; }
-            @media screen and (max-width: 414px) {
-              .aboutPage__memberList-item-img img {
-                height: auto; } }
         .aboutPage__memberList-item-job {
-          font-size: 20px;
+          font-size: 16px;
           font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
-          margin-bottom: 10px; }
+          margin-bottom: 7px; }
           @media screen and (max-width: 414px) {
             .aboutPage__memberList-item-job {
               font-size: 15px;
               margin-bottom: 6px; } }
         .aboutPage__memberList-item-name {
-          font-size: 20px;
+          font-size: 16px;
           font-weight: bold;
           font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
-          margin-bottom: 12px; }
+          margin-bottom: 4px; }
           @media screen and (max-width: 414px) {
             .aboutPage__memberList-item-name {
               font-size: 15px;
               margin-bottom: 6px; } }
         .aboutPage__memberList-item-sub {
-          font-size: 20px;
+          font-size: 16px;
           font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif; }
           @media screen and (max-width: 414px) {
             .aboutPage__memberList-item-sub {
               font-size: 15px; } }
   .aboutPage__summary {
-    margin-bottom: 200px; }
+    margin-bottom: 150px; }
     @media screen and (max-width: 414px) {
       .aboutPage__summary {
         margin-bottom: 100px; } }
     .aboutPage__summary .inner {
-      max-width: 1290px;
-      width: 90%;
+      width: 1080px;
       margin: 0 auto; }
       @media screen and (max-width: 414px) {
         .aboutPage__summary .inner {
-          max-width: inherit; } }
+          width: 90%; } }
     .aboutPage__summary-title {
-      font-size: 50px;
+      font-size: 40px;
       font-weight: bold;
       text-align: center;
       margin-bottom: 100px; }
@@ -1370,18 +1362,20 @@
           font-size: 20px;
           margin-bottom: 50px; } }
     .aboutPage__summary-table {
-      margin-bottom: 23px; }
+      width: 617px;
+      margin: 0 auto 131px; }
       .aboutPage__summary-table tr {
-        margin-bottom: 28px;
         width: 100%;
-        display: block; }
+        display: block;
+        margin-bottom: 20px; }
         @media screen and (max-width: 414px) {
           .aboutPage__summary-table tr {
             display: inherit; } }
         .aboutPage__summary-table tr th {
-          width: 240px;
+          vertical-align: middle;
+          width: 115px;
           text-align: left;
-          font-size: 20px;
+          font-size: 16px;
           font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
           font-weight: bold;
           line-height: 1.3; }
@@ -1394,11 +1388,11 @@
             .aboutPage__summary-table tr th {
               width: 22%; } }
         .aboutPage__summary-table tr td {
-          font-size: 20px;
+          font-size: 16px;
           font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
           line-height: 1.6;
-          padding-left: 30px;
-          border-left: 1px solid #C4C4C4; }
+          padding-left: 50px;
+          border-left: 1px solid #c4c4c4; }
           @media screen and (max-width: 414px) {
             .aboutPage__summary-table tr td {
               width: 78%;
@@ -1411,32 +1405,30 @@
               margin-left: 4%; } }
     .aboutPage__summary-map {
       width: 100%;
-      height: 604px;
-      margin-bottom: 50px; }
+      height: 506px;
+      margin-bottom: 100px; }
       @media screen and (max-width: 414px) {
         .aboutPage__summary-map {
           height: 398px; } }
     .aboutPage__summary-Button {
-      width: 300px;
-      height: 65px;
-      line-height: 65px;
+      width: 200px;
+      height: 50px;
+      line-height: 50px;
       border: 3px solid #000;
       text-align: center;
-      margin: 0 auto; }
+      margin: 0 auto;
+      font-weight: bold; }
       @media screen and (max-width: 414px) {
         .aboutPage__summary-Button {
-          width: 200px;
-          height: 50px;
-          line-height: 50px;
           border: 2px solid #000; } }
       .aboutPage__summary-Button a {
         display: block;
         width: 100%;
         height: 100%;
         font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
-        transition: all .3s;
+        transition: all 0.3s;
         color: #000;
-        font-size: 20px;
+        font-size: 18px;
         font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif; }
         @media screen and (max-width: 414px) {
           .aboutPage__summary-Button a {
@@ -1444,44 +1436,46 @@
         .aboutPage__summary-Button a:hover {
           box-shadow: 0 20px 80px rgba(0, 0, 0, 0.2); }
   .aboutPage__history {
-    background: #F5F5F5;
-    padding: 100px 0 88px;
+    background: #f5f5f5;
+    padding: 100px 0 135px;
     margin-bottom: 100px; }
     @media screen and (max-width: 414px) {
       .aboutPage__history {
         margin-bottom: 50px;
         padding-bottom: 85px; } }
     .aboutPage__history .inner {
-      max-width: 1290px;
-      width: 90%;
+      width: 700px;
       margin: 0 auto; }
       @media screen and (max-width: 414px) {
         .aboutPage__history .inner {
-          max-width: inherit; } }
+          width: 90%; } }
     .aboutPage__history-title {
-      font-size: 50px;
+      font-size: 40px;
       font-weight: bold;
       text-align: center;
-      margin-bottom: 87px; }
+      margin-bottom: 92px; }
       @media screen and (max-width: 414px) {
         .aboutPage__history-title {
           font-size: 20px;
           margin-bottom: 54px; } }
     .aboutPage__historyList-item {
       display: flex;
-      align-items: center;
-      margin-bottom: 22px; }
+      justify-content: center;
+      margin-bottom: 9px; }
       @media screen and (max-width: 414px) {
         .aboutPage__historyList-item {
           margin-bottom: 12px; } }
       .aboutPage__historyList-item-date {
+        width: 115px;
         font-size: 20px;
-        margin-right: 25px; }
+        margin-right: 15px;
+        line-height: 1.5; }
         @media screen and (max-width: 414px) {
           .aboutPage__historyList-item-date {
-            font-size: 14px;
-            margin-right: 20px; } }
+            font-size: 14px; } }
       .aboutPage__historyList-item-text {
+        width: 525px;
+        line-height: 1.5;
         font-size: 20px;
         font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif; }
         @media screen and (max-width: 414px) {
@@ -1494,28 +1488,27 @@
             .aboutPage__historyList-item-text br {
               display: block; } }
   .aboutPage__MainCustomer {
-    margin-bottom: 148px; }
+    margin-bottom: 118px; }
     @media screen and (max-width: 414px) {
       .aboutPage__MainCustomer {
         margin-bottom: 123px; } }
     .aboutPage__MainCustomer-title {
-      font-size: 50px;
+      font-size: 40px;
       font-weight: bold;
       text-align: center;
-      margin-bottom: 57px; }
+      margin-bottom: 96px; }
       @media screen and (max-width: 414px) {
         .aboutPage__MainCustomer-title {
           font-size: 20px;
           margin-bottom: 40px; } }
     .aboutPage__MainCustomerList {
+      width: 1080px;
       display: flex;
       flex-wrap: wrap;
-      max-width: 1290px;
-      width: 90%;
       margin: 0 auto; }
       @media screen and (max-width: 414px) {
         .aboutPage__MainCustomerList {
-          max-width: inherit;
+          width: 90%;
           justify-content: center; } }
       .aboutPage__MainCustomerList-item {
         width: 20%;
@@ -2273,10 +2266,10 @@ body {
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2); }
     .header.header__scroll.on .navMenu__List-item a {
       color: #000; }
-  .header.header_normal {
+  .header.header__normal {
     background: #fff;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2); }
-    .header.header_normal .navMenu__List-item a {
+    .header.header__normal .navMenu__List-item a {
       color: #000; }
   @media screen and (max-width: 414px) {
     .header {
@@ -2621,7 +2614,6 @@ body {
     @media screen and (max-width: 414px) {
       .news__contents {
         width: 100%;
-        max-width: inherit;
         margin: 0 auto 50px; } }
     .news__contents .news__List {
       display: flex;
@@ -2748,7 +2740,6 @@ body {
     @media screen and (max-width: 414px) {
       .contact .inner {
         display: block;
-        max-width: inherit;
         height: auto;
         width: 100%; } }
   .contact .contents__title {
@@ -2897,8 +2888,7 @@ body {
     @media screen and (max-width: 414px) {
       .footer .inner {
         width: 90%;
-        display: block;
-        max-width: inherit; } }
+        display: block; } }
   .footer .footer__info {
     margin-bottom: 270px; }
     @media screen and (max-width: 414px) {

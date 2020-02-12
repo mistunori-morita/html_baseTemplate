@@ -37,7 +37,6 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
 
     @include iphoneLarge {
       width: 100%;
-      max-width: inherit;
       margin-bottom: 17px;
     }
 
@@ -166,11 +165,10 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
     }
 
     .inner {
-      max-width: 1290px;
+      width: 1080px;
       margin: 0 auto;
-      width: 90%;
       @include iphoneLarge {
-        max-width: inherit;
+        width: 90%;
       }
     }
 
