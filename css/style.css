@@ -216,17 +216,17 @@
 .newsSinglePage {
   background: #f5f5f5;
   margin-top: 150px;
-  padding-bottom: 200px; }
+  padding-bottom: 150px; }
   @media screen and (max-width: 414px) {
     .newsSinglePage {
       margin-top: 90px;
-      padding-bottom: 140px; } }
+      padding-bottom: 149px; } }
   .newsSinglePage .news__article {
     background: #fff;
-    padding-bottom: 150px; }
+    padding-bottom: 128px; }
     @media screen and (max-width: 414px) {
       .newsSinglePage .news__article {
-        padding-bottom: 68px; } }
+        padding-bottom: 75px; } }
     .newsSinglePage .news__article .inner {
       width: 1080px;
       margin: 0 auto; }
@@ -235,33 +235,33 @@
           width: 90%; } }
     .newsSinglePage .news__articleNotes {
       display: flex;
-      margin-bottom: 100px; }
+      margin-bottom: 45px; }
       @media screen and (max-width: 414px) {
         .newsSinglePage .news__articleNotes {
           display: block;
-          margin-bottom: 25px; } }
+          margin-bottom: 26px; } }
     .newsSinglePage .news__article-info {
-      width: 860px;
-      margin-right: 120px; }
+      width: 730px;
+      margin-right: 34px; }
       @media screen and (max-width: 414px) {
         .newsSinglePage .news__article-info {
           width: 100%;
           margin-right: 0;
           margin-bottom: 17px; } }
       .newsSinglePage .news__article-info-topic {
-        font-size: 20px;
+        font-size: 16px;
         color: #5576ff;
         font-weight: normal;
         padding-bottom: 10px;
         border-bottom: 1px solid #c4c4c4;
-        margin-bottom: 25px; }
+        margin-bottom: 16px; }
         @media screen and (max-width: 414px) {
           .newsSinglePage .news__article-info-topic {
-            padding-bottom: 8px;
+            padding-bottom: 11px;
             margin-bottom: 15px;
             font-size: 15px; } }
       .newsSinglePage .news__article-info-title {
-        font-size: 30px;
+        font-size: 25px;
         font-weight: bold;
         line-height: 1.5; }
         @media screen and (max-width: 414px) {
@@ -269,10 +269,10 @@
             font-size: 20px; } }
     .newsSinglePage .news__article-sub {
       min-height: 90px;
-      padding-top: 24px;
+      padding-top: 15px;
+      padding-bottom: 15px;
       border-left: 5px solid #5576ff;
-      padding-left: 30px;
-      padding-bottom: 5px; }
+      padding-left: 18px; }
       @media screen and (max-width: 414px) {
         .newsSinglePage .news__article-sub {
           min-height: inherit;
@@ -280,7 +280,7 @@
           border: none; } }
       .newsSinglePage .news__article-sub-date {
         font-size: 20px;
-        margin-bottom: 15px; }
+        margin-bottom: 12px; }
         @media screen and (max-width: 414px) {
           .newsSinglePage .news__article-sub-date {
             font-size: 15px;
@@ -299,8 +299,9 @@
     .newsSinglePage .news__article-contents a,
     .newsSinglePage .news__article-contents p {
       line-height: 1.7;
-      font-size: 20px;
-      margin-bottom: 42px; }
+      font-size: 16px;
+      margin-bottom: 16px;
+      font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif; }
       @media screen and (max-width: 414px) {
         .newsSinglePage .news__article-contents pre,
         .newsSinglePage .news__article-contents span,
@@ -308,22 +309,22 @@
         .newsSinglePage .news__article-contents p {
           font-size: 14px;
           line-height: 1.8;
-          margin-bottom: 27px; } }
+          margin-bottom: 36px; } }
     .newsSinglePage .news__article-contents img {
       width: 100%;
-      margin-bottom: 50px; }
+      margin-bottom: 20px; }
       @media screen and (max-width: 414px) {
         .newsSinglePage .news__article-contents img {
-          margin-bottom: 30px; } }
+          margin-bottom: 23px; } }
   .newsSinglePage .news__contents {
-    padding-top: 96px;
+    padding-top: 105px;
     margin-bottom: 70px; }
     @media screen and (max-width: 414px) {
       .newsSinglePage .news__contents {
         padding-top: 56px;
         margin-bottom: 50px; } }
     .newsSinglePage .news__contents-title {
-      font-size: 50px;
+      font-size: 40px;
       font-weight: bold;
       margin-bottom: 94px;
       text-align: center; }
