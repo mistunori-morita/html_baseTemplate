@@ -1,8 +1,11 @@
-$hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
+$hiragino: "Hiragino Kaku Gothic Pro",
+"ヒラギノ角ゴ Pro W3",
+sans-serif;
 
 //アバウト
 .aboutPage {
   margin-top: 80px;
+
   @include iphoneLarge {
     margin-top: 60px;
   }
@@ -14,6 +17,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
     background-size: cover;
     padding-top: 105px;
     margin-bottom: 97px;
+
     @include iphoneLarge {
       height: 584px;
       margin-bottom: 93px;
@@ -27,6 +31,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
       margin-bottom: 53px;
       color: #fff;
       opacity: 0;
+
       @include iphoneLarge {
         font-size: 25px;
         margin-bottom: 57px;
@@ -50,11 +55,13 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
       line-height: 1.6;
       margin-bottom: 31px;
       opacity: 0;
+
       @include iphoneLarge {
         font-size: 14px;
         font-weight: normal;
         margin-bottom: 20px;
       }
+
       @include iphoneSmall {
         font-size: 13px;
       }
@@ -75,6 +82,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
         transform: translateY(50px);
         opacity: 0;
       }
+
       100% {
         transform: translateY(0);
         opacity: 1;
@@ -84,6 +92,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
 
   &__intro {
     margin-bottom: 89px;
+
     @include iphoneLarge {
       padding: 0 5%;
       margin-bottom: 77px;
@@ -94,6 +103,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
         opacity: 0;
         transform: translateX(-160px);
       }
+
       100% {
         opacity: 0.08;
         transform: translateX(0);
@@ -103,6 +113,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
     .aboutPage__mission {
       margin-bottom: 187px;
       position: relative;
+
       @include iphoneLarge {
         margin-bottom: 64px;
       }
@@ -124,11 +135,17 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
           transform: translateX(-160px);
           text-align: center;
           animation: slideLeftText 1.3s ease-out forwards;
+
           @include iphoneLarge {
             font-size: 80px;
             top: 20px;
           }
         }
+
+        .aboutPage__mission-title {
+          animation: fadeIn 1.7s ease-out forwards;
+        }
+
         .aboutPage__mission-text {
           animation: fadeIn 1.7s ease-out forwards;
         }
@@ -140,10 +157,13 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
         text-align: center;
         margin-bottom: 82px;
         line-height: 1.5;
+        opacity: 0;
+
         @include iphoneLarge {
           font-size: 20px;
           margin-bottom: 22px;
         }
+
         @include iphoneSmall {
           font-size: 18px;
         }
@@ -156,6 +176,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
         line-height: 1.6;
         margin-bottom: 24px;
         opacity: 0;
+
         @include iphoneLarge {
           font-size: 14px;
           font-weight: normal;
@@ -167,6 +188,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
     .aboutPage__vision {
       margin-bottom: 163px;
       position: relative;
+
       @include iphoneLarge {
         margin-bottom: 64px;
       }
@@ -188,10 +210,15 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
           transform: translateX(-160px);
           text-align: center;
           animation: slideLeftText 1.3s ease-out forwards;
+
           @include iphoneLarge {
             font-size: 80px;
             top: 13px;
           }
+        }
+
+        .aboutPage__vision-title {
+          animation: fadeIn 1.7s ease-out forwards;
         }
 
         .aboutPage__vision-text {
@@ -204,10 +231,13 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
         font-weight: bold;
         text-align: center;
         margin-bottom: 30px;
+        opacity: 0;
+
         @include iphoneLarge {
           font-size: 20px;
           margin-bottom: 46px;
         }
+
         @include iphoneSmall {
           font-size: 18px;
         }
@@ -220,6 +250,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
         line-height: 1.5;
         margin-bottom: 35px;
         opacity: 0;
+
         @include iphoneLarge {
           font-size: 14px;
           margin-bottom: 22px;
@@ -248,10 +279,15 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
           transform: translateX(-160px);
           text-align: center;
           animation: slideLeftText 1.3s ease-out forwards;
+
           @include iphoneLarge {
             top: 10px;
             font-size: 80px;
           }
+        }
+
+        .aboutPage__value-title {
+          animation: fadeIn 1.7s ease-out forwards;
         }
 
         .aboutPage__value-table {
@@ -264,10 +300,13 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
         font-weight: bold;
         text-align: center;
         margin-bottom: 45px;
+        opacity: 0;
+
         @include iphoneLarge {
           font-size: 20px;
           margin-bottom: 39px;
         }
+
         @include iphoneSmall {
           font-size: 18px;
         }
@@ -277,6 +316,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
         display: flex;
         justify-content: center;
         opacity: 0;
+
         @include iphoneLarge {
           display: block;
         }
@@ -285,6 +325,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
           margin-bottom: 50px;
           display: block;
           width: 100%;
+
           @include iphoneLarge {
             margin-bottom: 20px;
           }
@@ -298,6 +339,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
             line-height: 1.3;
             padding-right: 40px;
             vertical-align: middle;
+
             @include iphoneLarge {
               width: 100%;
               display: block;
@@ -315,6 +357,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
             line-height: 1.6;
             padding-left: 40px;
             border-left: 1px solid #c4c4c4;
+
             @include iphoneLarge {
               padding: 0;
               font-weight: normal;
@@ -331,6 +374,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
     background: #f5f5f5;
     padding: 105px 0 100px;
     margin-bottom: 100px;
+
     @include iphoneLarge {
       padding: 68px 0 50px;
       margin-bottom: 69px;
@@ -339,6 +383,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
     .inner {
       width: 1080px;
       margin: 0 auto;
+
       @include iphoneLarge {
         width: 90%;
       }
@@ -349,6 +394,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
       font-weight: bold;
       text-align: center;
       margin-bottom: 90px;
+
       @include iphoneLarge {
         font-size: 20px;
         margin-bottom: 51px;
@@ -399,6 +445,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
           height: 200px;
           margin-bottom: 10px;
           overflow: hidden;
+
           @include iphoneLarge {
             height: auto;
             margin-bottom: 7px;
@@ -409,6 +456,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
           font-size: 16px;
           font-family: $hiragino;
           margin-bottom: 7px;
+
           @include iphoneLarge {
             font-size: 15px;
             margin-bottom: 6px;
@@ -420,6 +468,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
           font-weight: bold;
           font-family: $hiragino;
           margin-bottom: 4px;
+
           @include iphoneLarge {
             font-size: 15px;
             margin-bottom: 6px;
@@ -429,6 +478,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
         &-sub {
           font-size: 16px;
           font-family: $hiragino;
+
           @include iphoneLarge {
             font-size: 15px;
           }
@@ -439,6 +489,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
 
   &__summary {
     margin-bottom: 150px;
+
     @include iphoneLarge {
       margin-bottom: 100px;
     }
@@ -446,6 +497,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
     .inner {
       width: 1080px;
       margin: 0 auto;
+
       @include iphoneLarge {
         width: 90%;
       }
@@ -456,6 +508,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
       font-weight: bold;
       text-align: center;
       margin-bottom: 100px;
+
       @include iphoneLarge {
         font-size: 20px;
         margin-bottom: 56px;
@@ -465,6 +518,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
     &-table {
       width: 617px;
       margin: 0 auto 131px;
+
       @include iphoneLarge {
         width: 100%;
         margin-bottom: 50px;
@@ -474,6 +528,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
         width: 100%;
         display: block;
         margin-bottom: 20px;
+
         @include iphoneLarge {
           display: inherit;
           margin-bottom: 0;
@@ -488,12 +543,14 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
           font-family: $hiragino;
           font-weight: bold;
           line-height: 1.3;
+
           @include iphoneLarge {
             width: 20%;
             font-size: 14px;
             line-height: 2;
             vertical-align: inherit;
           }
+
           @include iphoneSmall {
             width: 22%;
           }
@@ -505,12 +562,14 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
           line-height: 1.6;
           padding-left: 50px;
           border-left: 1px solid #c4c4c4;
+
           @include iphoneLarge {
             width: 78%;
             padding-left: 2%;
             font-size: 14px;
             line-height: 2;
           }
+
           @include iphoneSmall {
             width: 72%;
             margin-left: 4%;
@@ -523,6 +582,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
       width: 100%;
       height: 506px;
       margin-bottom: 100px;
+
       @include iphoneLarge {
         height: 398px;
         margin-bottom: 50px;
@@ -532,11 +592,11 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
     &-Button {
       width: 200px;
       height: 50px;
-      line-height: 50px;
       border: 3px solid #000;
       text-align: center;
       margin: 0 auto;
       font-weight: bold;
+
       @include iphoneLarge {
         border: 2px solid #000;
       }
@@ -550,9 +610,11 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
         color: #000;
         font-size: 18px;
         font-family: $hiragino;
+        padding-top: 13px;
 
         @include iphoneLarge {
           font-size: 15px;
+          padding-top: 15px;
         }
 
         &:hover {
@@ -566,6 +628,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
     background: #f5f5f5;
     padding: 100px 0 135px;
     margin-bottom: 100px;
+
     @include iphoneLarge {
       margin-bottom: 67px;
       padding: 68px 0 84px;
@@ -574,6 +637,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
     .inner {
       width: 700px;
       margin: 0 auto;
+
       @include iphoneLarge {
         width: 90%;
       }
@@ -584,6 +648,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
       font-weight: bold;
       text-align: center;
       margin-bottom: 92px;
+
       @include iphoneLarge {
         font-size: 20px;
         margin-bottom: 51px;
@@ -595,6 +660,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
         display: flex;
         justify-content: center;
         margin-bottom: 9px;
+
         @include iphoneLarge {
           margin-bottom: 12px;
           justify-content: space-between;
@@ -605,21 +671,25 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
           font-size: 20px;
           margin-right: 15px;
           line-height: 1.5;
+
           @include iphoneLarge {
             font-size: 14px;
             width: 25%;
             margin-right: 0;
           }
+
           @include iphoneSmall {
             font-size: 13px;
             width: 30%;
           }
         }
+
         &-text {
           width: 525px;
           line-height: 1.5;
           font-size: 20px;
           font-family: $hiragino;
+
           @include iphoneLarge {
             width: 75%;
             font-size: 14px;
@@ -632,6 +702,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
 
           br {
             display: none;
+
             @include iphoneLarge {
               display: block;
             }
@@ -643,6 +714,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
 
   &__MainCustomer {
     margin-bottom: 118px;
+
     @include iphoneLarge {
       margin-bottom: 130px;
     }
@@ -652,6 +724,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
       font-weight: bold;
       text-align: center;
       margin-bottom: 96px;
+
       @include iphoneLarge {
         font-size: 20px;
         margin-bottom: 68px;
@@ -663,6 +736,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
       display: flex;
       flex-wrap: wrap;
       margin: 0 auto;
+
       @include iphoneLarge {
         width: 90%;
         justify-content: center;
@@ -672,6 +746,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
         width: 20%;
         text-align: center;
         margin-bottom: 25px;
+
         @include iphoneLarge {
           width: 48%;
           margin-bottom: 15px;
