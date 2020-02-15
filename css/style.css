@@ -86,6 +86,9 @@
           font-size: 14px;
           line-height: 1.5;
           margin-bottom: 40px; } }
+      @media screen and (max-width: 414px) {
+        .servicePage__List-item-text span {
+          display: block; } }
     .servicePage__List-item-tagList {
       display: flex;
       align-items: center;
