@@ -1807,17 +1807,15 @@
     .recruitPage__contents .recruit__modalList-Entry {
       width: 300px;
       height: 70px;
-      line-height: 70px;
       text-align: center;
       border: 3px solid #000;
       margin: 0 auto 90px; }
       @media screen and (max-width: 414px) {
         .recruitPage__contents .recruit__modalList-Entry {
           width: 80%;
-          height: 70px;
-          line-height: 70px;
           margin-bottom: 50px; } }
       .recruitPage__contents .recruit__modalList-Entry a {
+        padding-top: 23px;
         width: 100%;
         height: 100%;
         display: block;
@@ -2029,6 +2027,19 @@
         margin: 0 auto; } }
     .formPage .form__Contents .fromGroup-item {
       margin-bottom: 20px; }
+      .formPage .form__Contents .fromGroup-item .form-item-select {
+        position: relative; }
+        .formPage .form__Contents .fromGroup-item .form-item-select::before {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 0;
+          border: 8px solid transparent;
+          border-top: 12px solid #000;
+          right: 12px;
+          top: 6px;
+          bottom: 0;
+          margin: auto; }
       .formPage .form__Contents .fromGroup-item label {
         font-size: 16px;
         font-weight: bold;
@@ -2131,23 +2142,23 @@
   .formPage .form__Contents .form-check-Button {
     width: 200px;
     height: 50px;
-    line-height: 50px;
     text-align: center;
     font-weight: bold;
     font-size: 18px;
     font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
     border: 3px solid #000;
     margin: 0 auto;
-    transition: all 0.3s; }
+    transition: all 0.3s;
+    padding-top: 13px; }
     @media screen and (max-width: 414px) {
       .formPage .form__Contents .form-check-Button {
+        padding-top: 19px;
         width: 200px;
         font-size: 15px;
         border: 2px solid #000;
-        height: 55px;
-        line-height: 55px; } }
+        height: 55px; } }
     .formPage .form__Contents .form-check-Button:hover {
-      opacity: 0.6;
+      box-shadow: 0 20px 80px rgba(0, 0, 0, 0.2);
       cursor: pointer; }
   @media screen and (max-width: 414px) {
     .formPage .form__Contents .privacy {
@@ -2181,7 +2192,7 @@
         font-size: 14px; } }
     .formPage .form__Contents .privacy-modal-Button:hover {
       cursor: pointer;
-      opacity: 0.6; }
+      box-shadow: 0 20px 80px rgba(0, 0, 0, 0.2); }
   .formPage .form__Contents .privacy-modal-contents {
     display: none;
     position: fixed;
@@ -2261,7 +2272,7 @@
       .formPage .form__Contents .privacy-modal-close-Button {
         width: 260px; } }
     .formPage .form__Contents .privacy-modal-close-Button:hover {
-      opacity: 0.7;
+      box-shadow: 0 20px 80px rgba(0, 0, 0, 0.2);
       cursor: pointer; }
 
 * {
@@ -2442,8 +2453,14 @@ body {
       transition: 1s; }
       @media screen and (max-width: 414px) {
         .mainVisual__Lead-title {
-          font-size: 39px;
-          line-height: 1.2; } }
+          font-size: 30px;
+          line-height: 1.2;
+          width: 316px;
+          margin: 0 auto 20px; } }
+      @media screen and (max-width: 320px) {
+        .mainVisual__Lead-title {
+          font-size: 26px;
+          width: 275px; } }
       .mainVisual__Lead-title.in-visible {
         opacity: 1;
         animation: fadeIn 0.5s ease-out forwards; }
@@ -2457,7 +2474,15 @@ body {
       transition: 1s; }
       @media screen and (max-width: 414px) {
         .mainVisual__Lead-sub {
-          font-size: 13px; } }
+          font-size: 13px;
+          width: 324px;
+          margin: 0 auto; } }
+      @media screen and (max-width: 320px) {
+        .mainVisual__Lead-sub {
+          width: 275px; } }
+      @media screen and (max-width: 320px) {
+        .mainVisual__Lead-sub br {
+          display: none; } }
       .mainVisual__Lead-sub.in-visible {
         opacity: 1;
         animation: fadeIn 0.5s ease-out forwards; }

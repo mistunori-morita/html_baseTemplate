@@ -279,8 +279,15 @@ body {
       transition: 1s;
 
       @include iphoneLarge {
-        font-size: 39px;
+        font-size: 30px;
         line-height: 1.2;
+        width: 316px;
+        margin: 0 auto 20px;
+      }
+
+      @include iphoneSmall {
+        font-size: 26px;
+        width: 275px;
       }
 
       &.in-visible {
@@ -300,6 +307,18 @@ body {
 
       @include iphoneLarge {
         font-size: 13px;
+        width: 324px;
+        margin: 0 auto;
+      }
+
+      @include iphoneSmall {
+        width: 275px;
+      }
+
+      br {
+        @include iphoneSmall {
+          display: none;
+        }
       }
 
       &.in-visible {
