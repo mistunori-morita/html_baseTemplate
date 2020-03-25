@@ -206,7 +206,8 @@
             height: 215px; } }
   .newsPage .news__Link-Button-item {
     width: 200px;
-    height: 50px; }
+    height: 50px;
+    line-height: inherit; }
     @media screen and (max-width: 414px) {
       .newsPage .news__Link-Button-item {
         height: 55px; } }
@@ -489,7 +490,6 @@
       .worksPage .works__catch-info-Button {
         width: 200px;
         height: 50px;
-        line-height: 50px;
         text-align: center;
         border: 3px solid #000;
         margin: 0 auto; }
@@ -497,6 +497,7 @@
           .worksPage .works__catch-info-Button {
             display: none; } }
         .worksPage .works__catch-info-Button a {
+          padding-top: 13px;
           display: block;
           width: 100%;
           height: 100%;
@@ -650,13 +651,13 @@
     .worksPage .works__Link-Button-item {
       width: 200px;
       height: 50px;
-      line-height: 50px;
       text-align: center;
       border: 3px solid #000; }
       @media screen and (max-width: 414px) {
         .worksPage .works__Link-Button-item {
           border: 2px solid #000; } }
       .worksPage .works__Link-Button-item a {
+        padding-top: 13px;
         font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
         font-size: 18px;
         font-weight: bold;
@@ -667,9 +668,10 @@
         transition: all 0.3s; }
         @media screen and (max-width: 414px) {
           .worksPage .works__Link-Button-item a {
+            padding-top: 15px;
             font-size: 15px; } }
         .worksPage .works__Link-Button-item a:hover {
-          opacity: 0.5; }
+          box-shadow: 0 20px 80px rgba(0, 0, 0, 0.2); }
 
 .worksSinglePage {
   margin-top: 80px; }
@@ -981,7 +983,7 @@
   .aboutPage__mainvisual {
     width: 100%;
     height: 653px;
-    background: url("../img/about/about_mv_01.svg") no-repeat center center;
+    background: url("../img/about/about_mv_01.png") no-repeat center center;
     background-size: cover;
     padding-top: 105px;
     margin-bottom: 97px; }
@@ -989,7 +991,9 @@
       .aboutPage__mainvisual {
         height: 584px;
         margin-bottom: 93px;
-        padding: 95px 5% 0; } }
+        padding: 95px 5% 0;
+        background: url("../img/about/about_mv_01_sp.png") no-repeat center center;
+        background-size: cover; } }
     .aboutPage__mainvisual-title {
       font-size: 40px;
       font-weight: bold;
@@ -1217,7 +1221,7 @@
           .aboutPage__intro .aboutPage__value-table tr th {
             width: 200px;
             text-align: center;
-            font-size: 20px;
+            font-size: 16px;
             font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
             font-weight: bold;
             line-height: 1.3;
@@ -1233,7 +1237,7 @@
                 margin-bottom: 8px;
                 padding-right: 0; } }
           .aboutPage__intro .aboutPage__value-table tr td {
-            font-size: 20px;
+            font-size: 16px;
             font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
             line-height: 1.6;
             padding-left: 40px;
@@ -1463,7 +1467,7 @@
           justify-content: space-between; } }
       .aboutPage__historyList-item-date {
         width: 115px;
-        font-size: 20px;
+        font-size: 16px;
         margin-right: 15px;
         line-height: 1.5; }
         @media screen and (max-width: 414px) {
@@ -1478,7 +1482,7 @@
       .aboutPage__historyList-item-text {
         width: 525px;
         line-height: 1.5;
-        font-size: 20px;
+        font-size: 16px;
         font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif; }
         @media screen and (max-width: 414px) {
           .aboutPage__historyList-item-text {
@@ -1670,8 +1674,7 @@
                 width: 35px;
                 height: 35px; } }
         .recruitPage__contents .recruit__recruitingList-item:hover {
-          opacity: 0.4;
-          cursor: pointer; }
+          box-shadow: 0 20px 80px rgba(0, 0, 0, 0.2); }
         .recruitPage__contents .recruit__recruitingList-item:nth-child(even) {
           margin-left: 30px; }
           @media screen and (max-width: 414px) {
@@ -1826,7 +1829,7 @@
           .recruitPage__contents .recruit__modalList-Entry a {
             font-size: 15px; } }
         .recruitPage__contents .recruit__modalList-Entry a:hover {
-          opacity: 0.5; }
+          box-shadow: 0 20px 80px rgba(0, 0, 0, 0.2); }
     .recruitPage__contents .recruit__modalList-Close {
       text-align: center;
       width: 200px;
@@ -1843,7 +1846,7 @@
           height: 50px;
           line-height: 50px; } }
       .recruitPage__contents .recruit__modalList-Close:hover {
-        opacity: 0.5; }
+        box-shadow: 0 20px 80px rgba(0, 0, 0, 0.2); }
   .recruitPage__contents .recruit__conditions {
     background: #f5f5f5;
     padding: 100px 0 200px; }
@@ -2536,8 +2539,7 @@ body {
             line-height: 50px;
             margin-bottom: 25px; } }
         .service__contents .service__itemsList-item-button:hover {
-          opacity: 0.6;
-          box-shadow: 0 20px 80px rgba(0, 0, 0, 0.09); }
+          box-shadow: 0 20px 80px rgba(0, 0, 0, 0.2); }
         .service__contents .service__itemsList-item-button a {
           font-size: 20px;
           color: #000;
@@ -2576,7 +2578,8 @@ body {
             padding: 5px;
             border: 1px solid #ddd; } }
       .service__contents .service__itemsList-item-img img {
-        width: 100%; }
+        width: 100%;
+        vertical-align: bottom; }
         @media screen and (max-width: 414px) {
           .service__contents .service__itemsList-item-img img {
             height: auto;
@@ -2620,7 +2623,7 @@ body {
           font-size: 15px;
           padding-top: 20px; } }
       .service__Link-Button-item a:hover {
-        opacity: 0.5; }
+        box-shadow: 0 20px 80px rgba(0, 0, 0, 0.2); }
 
 .news {
   background: #f5f5f5;
@@ -2753,7 +2756,7 @@ body {
           .news__Link-Button-item a {
             font-size: 15px; } }
         .news__Link-Button-item a:hover {
-          opacity: 0.5; }
+          box-shadow: 0 20px 80px rgba(0, 0, 0, 0.2); }
 
 .contact {
   background: url("../img/top/contact_bg_01.svg") repeat center;

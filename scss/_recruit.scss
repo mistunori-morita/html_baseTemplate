@@ -188,8 +188,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
           }
 
           &:hover {
-            opacity: 0.4;
-            cursor: pointer;
+            @include hoverButton;
           }
 
           &:nth-child(even) {
@@ -382,7 +381,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
           }
 
           &:hover {
-            opacity: 0.5;
+            @include hoverButton;
           }
         }
       }
@@ -403,7 +402,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
           line-height: 50px;
         }
         &:hover {
-          opacity: 0.5;
+          @include hoverButton;
         }
       }
     }

@@ -131,6 +131,7 @@ $hiragino: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
     &-item {
       width: 200px;
       height: 50px;
+      line-height: inherit;
       @include iphoneLarge {
         height: 55px;
       }
