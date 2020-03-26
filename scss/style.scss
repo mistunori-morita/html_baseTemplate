@@ -16,8 +16,14 @@ sans-serif;
 * {
   box-sizing: border-box;
   touch-action: manipulation;
+  -webkit-appearance: none;
 }
 
+// iosデフォルトのスタイル解消
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+}
 
 img {
   max-width: 100%;
